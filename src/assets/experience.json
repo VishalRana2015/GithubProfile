@@ -1,0 +1,40 @@
+{
+  "experience": [
+    {
+      "projectWorkPeriod": "A string containing date, range ... e.g Jul- Dec 2020",
+      "title": "Project Title",
+      "data": [
+        "A String containing data that you want to show as key your responsibilities while working on the project"
+      ],
+      "link": {
+        "href": "link to project",
+        "text": "Hyperlink text"
+      },
+      "role": "Your role on the project"
+    },
+    {
+      "projectWorkPeriod": "May 2018 - June 2018",
+      "title": "Arizona State University",
+      "data": [
+        "Optimized image processing algorithm of pill detection by creating customized MASKRCNN algorithm, increasing accuracy by 15%; trained classification algorithm with the help of triplet loss to learn the image embedding of pill, reducing the hassle of collecting data of new pills.",
+        "Devised a pipeline of the project to incorporate it into the product of the company. Implemented Restful APIs in Django that enabled our quality Analyst team to increase reporting speed by 46%.",
+        "Built a web app to onboard data from the company’s product using Flask, Postgres, and AWS S3, enabling interactive charts in real-time.",
+        "Mentored 2 interns to optimize the pill detection algorithm and to include the multiprocessing pipeline, increasing overall speed by 75%."
+      ],
+      "link": {
+        "href": "https://www.asu.edu/",
+        "text": "Link to ASU Website"
+      },
+      "role": "Programmer Analyst"
+    },
+    {
+      "projectWorkPeriod": "Jan 2018 - May 2018",
+      "title": "Space Application Centre, ISRO",
+      "data": [
+        "Implemented noise reduction algorithm on the satellite image and prepared architecture for detecting objects in high‑resolution satellite images, achieving 80% accuracy.",
+        "Increased accessibility of satellite image data by redesigning database and application for showcasing graphical data."
+      ],
+      "role": "Research Intern"
+    }
+  ]
+}

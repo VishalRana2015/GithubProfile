@@ -1,1 +1,20 @@
-<p>portfolio works!</p>
+<div class="min-h-screen bg-gradient-to-b from-blue-400 to-purple-600">
+  <div class="container mx-auto px-4 py-8">
+    <div *ngIf="experiences && experiences.length > 0">
+      <div *ngFor="let experience of experiences" class="mb-8 bg-white shadow-lg rounded-lg p-6">
+        <h3 class="text-2xl font-bold mb-2">{{ experience.title }}</h3>
+        <p class="text-lg"><strong>Role:</strong> {{ experience.role }}</p>
+        <p class="text-lg"><strong>Project Work Period:</strong> {{ experience.projectWorkPeriod }}</p>
+        <ul class="list-disc pl-4 mt-2">
+          <li *ngFor="let item of experience.data" class="text-base">{{ item }}</li>
+        </ul>
+        <p *ngIf="experience.link" class="mt-4">
+          <a href="{{ experience.link.href }}" target="_blank" class="text-blue-500">{{ experience.link.text }}</a>
+        </p>
+      </div>
+    </div>
+    <div *ngIf="!experiences || experiences.length === 0">
+      <p class="text-white text-lg">No experiences found.</p>
+    </div>
+  </div>
+</div>

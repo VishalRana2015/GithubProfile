@@ -1,12 +1,35 @@
-<nav class="navbar">
-  <div class="logo">Vishal Rana</div>
-  <div class="nav-links" [ngClass]="{'nav-active': isMenuOpen}">
-    <button class="close-btn" (click)="toggleMenu()">Close</button>
-    <a *ngFor="let data of menu" [routerLink]="data.link" (click)="toggleMenu()">{{ data.menu }}</a>
+<nav class="navbar bg-white shadow-lg fixed top-0 w-full z-50">
+  <div class="container mx-auto flex justify-between items-center py-4 px-6">
+    <div class="logo text-xl font-bold">Vishal Rana</div>
+
+    <!-- Desktop navigation links -->
+    <div class="nav-links hidden md:flex items-center space-x-6">
+      <a *ngFor="let data of menu" [routerLink]="data.link" (click)="scrollTo(data.link)"
+         [class.active]="isActive(data.link) || activeSection === data.menu.toLowerCase()"
+         class="text-gray-600 hover:text-gray-800 transition duration-300">
+        {{ data.menu }}
+      </a>
+    </div>
+
+    <!-- Mobile burger menu -->
+    <div class="burger md:hidden flex items-center" (click)="toggleMenu()">
+      <div class="line1 w-6 h-px bg-gray-800"></div>
+      <div class="line2 w-6 h-px bg-gray-800 my-1"></div>
+      <div class="line3 w-6 h-px bg-gray-800"></div>
+    </div>
   </div>
-  <div class="burger" (click)="toggleMenu()">
-    <div class="line1"></div>
-    <div class="line2"></div>
-    <div class="line3"></div>
+
+  <!-- Mobile navigation links -->
+  <div class="nav-links-mobile md:hidden bg-white fixed top-0 left-0 h-screen w-4/5 z-50 transform translate-x-full transition duration-300"
+       [ngClass]="{'translate-x-0': isMenuOpen}">
+    <button class="close-btn absolute top-4 right-4 text-gray-800"
+            (click)="toggleMenu()">Close</button>
+    <div class="flex flex-col items-center mt-20">
+      <a *ngFor="let data of menu" [routerLink]="data.link" (click)="scrollTo(data.link)"
+         [class.active]="isActive(data.link) || activeSection === data.menu.toLowerCase()"
+         class="text-gray-600 hover:text-gray-800 transition duration-300 py-4">
+        {{ data.menu }}
+      </a>
+    </div>
   </div>
 </nav>
