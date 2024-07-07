@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import config from './assets/data.json'
+import config from '../../assets/emailConfig.json'
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatProgressSpinner } from '@angular/material/progress-spinner';
 
 @Component({
   selector: 'app-contact',

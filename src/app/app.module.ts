@@ -1,5 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,7 +15,6 @@ import { SkillsComponent } from './skills/skills.component';
 import { ResumeComponent } from './resume/resume.component';
 import { WhyMeComponent } from './why-me/why-me.component';
 import { ContactComponent } from './contact/contact.component';
-
 
 @NgModule({
   declarations: [
@@ -30,7 +32,10 @@ import { ContactComponent } from './contact/contact.component';
     ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
