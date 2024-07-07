@@ -1,0 +1,8 @@
+{
+    "publicKey" : "yaFf35OG2VQUxRTPU",
+    "serviceId" : "service_vishal240",
+    "templateId" : "contact_form_template",
+    "defaultMessage" : "Message from VishalRana2015.github.io visitor",
+    "emailjsSendAPI" : "https://api.emailjs.com/api/v1.0/email/send",
+    "mockEndpoint" : "https://609639172f6746c8ac14f46763d77501.api.mockbin.io/"
+}
