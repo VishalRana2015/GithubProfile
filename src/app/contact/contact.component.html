@@ -80,3 +80,51 @@
     </div>
   </div>
 </div>
+<div>
+
+    <div> Photo here</div>
+    <div class="contact-form-container">
+        <form [formGroup]="contactForm" (ngSubmit) = "submit()">
+            <div>
+                <label for="name">Name: </label>
+                <input id="name" [formControl]="contactForm.controls.name" placeholder="Your Name Please" />
+                <div *ngIf="contactForm.controls.name.invalid && (contactForm.controls.name.dirty || contactForm.controls.name.touched)" class="error">
+                    Name is required.
+                </div>
+            </div>
+
+            <div>
+                <label for="email"> Email: </label>
+                <input id="email" [formControl]="contactForm.controls.email" placeholder="Your email address please"/>
+                <div *ngIf="contactForm.controls.email.invalid && (contactForm.controls.email.dirty || contactForm.controls.email.touched)" class="error">
+                    Email is required.
+                </div>
+            </div>
+
+            <div>
+                <label for ="subject" placeholder="One liner subject">Subject: </label>
+                <input id="subject" [formControl] = "contactForm.controls.subject"/>
+                <!-- <div *ngIf="contactForm.controls.subject.invalid && (contactForm.controls.subject.dirty || contactForm.controls.subject.touched)" class="error">
+                    Subject is required.
+                </div> -->
+            </div>
+
+            <div>
+                <label for="message"> Message: </label>
+                <textarea id="message" [formControl]="contactForm.controls.message" placeholder="Type your message here."></textarea>
+                <div *ngIf="contactForm.controls.message.invalid && (contactForm.controls.message.dirty || contactForm.controls.message.touched)" class="error">
+                    Please provide a meaningful message.
+                </div>
+            </div>
+
+            <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+        </form>
+
+
+    </div>
+
+    <div *ngIf ="isLoading" class="loading-container">
+        <mat-spinner></mat-spinner>
+        <p>Your request is in progress ...</p>
+    </div>
+</div>
