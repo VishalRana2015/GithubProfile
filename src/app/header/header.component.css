@@ -12,9 +12,18 @@
   font-size: 1.5rem;
 }
 
-.nav-links {
-  display: flex;
-  gap: 1rem;
+.nav-link {
+  color: #4A5568; /* text-gray-600 */
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #2D3748; /* text-gray-800 */
+}
+
+.nav-link.active {
+  color: yellow!important; /* Add a distinct color for the active link */
+  font-weight: bold;
 }
 
 .nav-links a {

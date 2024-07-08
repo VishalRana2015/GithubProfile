@@ -1,1 +1,82 @@
-<p>contact works!</p>
+<div class="min-h-screen flex items-center justify-center bg-gray-100 py-12 animated-gradient">
+  <div class="max-w-3xl w-full bg-white shadow-md rounded-lg p-6 ">
+    <div class="mb-6 text-center">
+      <h1 class="text-2xl font-semibold text-gray-800">Contact Me</h1>
+    </div>
+    <div class="contact-form-container">
+      <form [formGroup]="contactForm" (ngSubmit)="submit()" class="space-y-6">
+        <div>
+          <label for="name" class="block text-sm font-medium text-gray-700">Name:</label>
+          <input
+            id="name"
+            [formControl]="contactForm.controls.name"
+            placeholder="Your Name Please"
+            class="px-5 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 py-3"
+          />
+          <div
+            *ngIf="contactForm.controls.name.invalid && (contactForm.controls.name.dirty || contactForm.controls.name.touched)"
+            class="text-red-600 text-sm mt-1"
+          >
+            Name is required.
+          </div>
+        </div>
+
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email:</label>
+          <input
+            id="email"
+            [formControl]="contactForm.controls.email"
+            placeholder="Your email address please"
+            class="px-5 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 py-3"
+          />
+          <div
+            *ngIf="contactForm.controls.email.invalid && (contactForm.controls.email.dirty || contactForm.controls.email.touched)"
+            class="text-red-600 text-sm mt-1"
+          >
+            Email is required.
+          </div>
+        </div>
+
+        <div>
+          <label for="subject" class="block text-sm font-medium text-gray-700">Subject:</label>
+          <input
+            id="subject"
+            [formControl]="contactForm.controls.subject"
+            class="px-5 px-5 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 py-3"
+          />
+          <!-- Uncomment the below div if you want to display an error message for subject -->
+          <!-- <div *ngIf="contactForm.controls.subject.invalid && (contactForm.controls.subject.dirty || contactForm.controls.subject.touched)"
+                      class="text-red-600 text-sm mt-1">
+                      Subject is required.
+                  </div> -->
+        </div>
+
+        <div>
+          <label for="message" class="block text-sm font-medium text-gray-700">Message:</label>
+          <textarea
+            id="message"
+            [formControl]="contactForm.controls.message"
+            placeholder="Type your message here."
+            class="px-5 mt-1 block w-full rounded-md border border-gray-300 shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50 py-3"
+          ></textarea>
+          <div
+            *ngIf="contactForm.controls.message.invalid && (contactForm.controls.message.dirty || contactForm.controls.message.touched)"
+            class="text-red-600 text-sm mt-1"
+          >
+            Please provide a meaningful message.
+          </div>
+        </div>
+
+        <div class="text-center">
+          <button
+            type="submit"
+            [disabled]="contactForm.invalid"
+            class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

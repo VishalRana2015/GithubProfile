@@ -13,26 +13,31 @@ import { ResumeComponent } from './resume/resume.component';
 import { WhyMeComponent } from './why-me/why-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ScrollSpyDirective } from './scroll-spy.directive';
 
 @NgModule({
   declarations: [
-     AppComponent,
-     HeaderComponent,
-     HomeComponent,
-     AboutComponent,
-     ProfileComponent,
-     PortfolioComponent,
-     SkillsComponent,
-     ResumeComponent,
-     WhyMeComponent,
-     ContactComponent,
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    AboutComponent,
+    ProfileComponent,
+    PortfolioComponent,
+    SkillsComponent,
+    ResumeComponent,
+    WhyMeComponent,
+    ContactComponent,
+    ScrollSpyDirective,
 
-    ],
+  ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })
