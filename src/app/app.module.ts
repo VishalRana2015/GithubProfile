@@ -15,6 +15,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ResumeComponent } from './resume/resume.component';
 import { WhyMeComponent } from './why-me/why-me.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReadmeComponent } from './readme/readme.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { ContactComponent } from './contact/contact.component';
      ResumeComponent,
      WhyMeComponent,
      ContactComponent,
+     ReadmeComponent,
 
     ],
   imports: [
