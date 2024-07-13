@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ReadmeComponent } from '../readme/readme.component';
+
 
 @Component({
   selector: 'app-skills',
@@ -7,4 +10,16 @@ import { Component } from '@angular/core';
 })
 export class SkillsComponent {
 
+
+  constructor(private dialog: MatDialog){}
+
+  openDialog(){
+    let dialogRef = this.dialog.open(ReadmeComponent, {
+
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }
