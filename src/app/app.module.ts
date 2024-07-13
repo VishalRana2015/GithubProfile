@@ -18,6 +18,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { WhyMeComponent } from './why-me/why-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReadmeComponent } from './readme/readme.component';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,9 @@ import { ReadmeComponent } from './readme/readme.component';
     MatDialogModule,
     MatButtonModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
