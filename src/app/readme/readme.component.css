@@ -1,0 +1,16 @@
+.readme-panel{
+    padding: 0px;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.mat-dialog-container {
+    height: initial;
+    overflow: initial;
+    margin: 0px;
+}
+
+.mat-mdc-dialog-inner-containerk, mat-mdc-dialog-container,mat-mdc-dialog-surface, cdk-overlay-pane{
+    overflow: hidden;
+    margin: 0px;
+}

@@ -18,7 +18,8 @@ export class SkillsComponent {
       data: {
         src: this.getFile(),
         title: "MandleBrot Readme"
-      }
+      },
+      panelClass: "readme-panel"
     });
 
 
