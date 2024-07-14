@@ -21,6 +21,7 @@ import { WhyMeComponent } from './why-me/why-me.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReadmeComponent } from './readme/readme.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { SkillCardComponent } from './skill-card/skill-card.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
      WhyMeComponent,
      ContactComponent,
      ReadmeComponent,
+     SkillCardComponent,
 
     ],
   imports: [
