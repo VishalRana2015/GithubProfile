@@ -11,12 +11,12 @@ import { ReadmeComponent } from '../readme/readme.component';
 export class SkillsComponent {
 
 
-  constructor(private dialog: MatDialog){}
+  constructor(private dialog: MatDialog) { }
 
-  openDialog(){
+  openDialog() {
     let dialogRef = this.dialog.open(ReadmeComponent, {
-        src: this.getFile(),
-        title: "Mandlebrot Readme"
+      src: this.getFile(),
+      title: "Mandlebrot Readme"
     });
 
     dialogRef.afterClosed().subscribe(result => {
@@ -25,7 +25,7 @@ export class SkillsComponent {
   }
 
 
-  getFile(): string{
+  getFile(): string {
     return "assets/readme/mandelbrot.md";
   }
 }
