@@ -4,8 +4,9 @@ import { MarkdownService } from 'ngx-markdown';
 import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dialog';
 
 
-interface DialogData{ 
-  src: string ;
+interface DialogData {
+  src: string;
+  title: string;
 }
 @Component({
   selector: 'app-readme',
@@ -13,5 +14,13 @@ interface DialogData{
   styleUrl: './readme.component.css'
 })
 export class ReadmeComponent {
-  constructor(@Inject(MAT_DIALOG_DATA) public data: DialogData) {}
+  constructor(public markdownService: MarkdownService,
+    public httpClient: HttpClient,
+    public dialogRef: MatDialogRef<ReadmeComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: DialogData
+  ) { }
+
+  onClose() {
+    this.dialogRef.close();
+  }
 } 
