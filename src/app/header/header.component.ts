@@ -1,6 +1,5 @@
 import { Component, HostListener } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
@@ -8,43 +7,22 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  isMenuOpen = false;
-  activeSection: string = 'home'; // Default active section, change as needed
-
   menu = [
-    {
-      menu: "Home",
-      link: "#home"
-    },
-    {
-      menu: "Profile",
-      link: "#profile"
-    },
-    {
-      menu: "Skills",
-      link: "#skills"
-    },
-    {
-      menu: "Portfolio",
-      link: "#portfolio"
-    },
-    {
-      menu: "Why me",
-      link: "#why-me"
-    },
-    {
-      menu: "Contact",
-      link: "#contact"
-    },
+    { link: '#home', menu: 'Home' },
+    { link: '#profile', menu: 'Profile' },
+    { link: '#skills', menu: 'Skills' },
+    { link: '#portfolio', menu: 'Portfolio' },
+    { link: '#why-me', menu: 'Why Me' },
+    { link: '#contact', menu: 'Contact' }
   ];
 
+  isMenuOpen = false;
+  activeSection = '';
+
   constructor(private router: Router) {
-    // Close menu on route change (for mobile view)
-    this.router.events.pipe(
-      filter(event => event instanceof NavigationEnd)
-    ).subscribe(() => {
-      if (this.isMenuOpen) {
-        this.toggleMenu();
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        this.setActiveSection();
       }
     });
   }
@@ -54,35 +32,35 @@ export class HeaderComponent {
   }
 
   scrollTo(link: string) {
+    this.isMenuOpen = false;
     const element = document.querySelector(link);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
-      this.toggleMenu(); // Close menu after scrolling to the section
     }
   }
 
   isActive(link: string): boolean {
-    return this.router.isActive(link, true);
+    return this.activeSection === link.replace('#', '');
   }
 
-  @HostListener('window:scroll', ['$event'])
-  onWindowScroll(event: any) {
-    const sections = ['home', 'profile', 'skills', 'portfolio', 'why-me', 'contact']; // IDs of your sections
-    let currentSection = 'home'; // Default to home if no section is active
-
-    // Find the section currently in view
+  setActiveSection() {
+    const sections = this.menu.map(item => item.link);
     for (const section of sections) {
-      const element = document.getElementById(section);
+      const element = document.querySelector(section);
       if (element) {
         const rect = element.getBoundingClientRect();
-        if (rect.top >= 0 && rect.top <= window.innerHeight * 0.5) {
-          currentSection = section;
+        console.log(`Section: ${section}, Top: ${rect.top}, Bottom: ${rect.bottom}`);
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          this.activeSection = section.slice(1); // remove '#' from section ID
+          console.log(`Active Section: ${this.activeSection}`);
           break;
         }
       }
     }
+  }
 
-    // Update active section
-    this.activeSection = currentSection;
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.setActiveSection();
   }
 }
