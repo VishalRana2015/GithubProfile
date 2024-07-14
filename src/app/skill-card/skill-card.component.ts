@@ -6,18 +6,18 @@ import { Component, Input } from '@angular/core';
   styleUrl: './skill-card.component.css',
 })
 export class SkillCardComponent {
-  @Input() src: string;
-  @Input() level: number;
-  @Input() alt: string;
-  @Input() height: string = '70px';
-  @Input() width: string = '70px';
+  @Input() src: string = 'no image';
+  @Input() level: number = 1;
+  @Input() alt: string = 'Alternate text';
+  @Input() height: number = 70;
+  @Input() width: number = 70;
 
   constructor() {}
 
-  getHeight(): string {
+  getHeight(): number {
     return this.height;
   }
-  getWidth(): string {
+  getWidth(): number {
     return this.width;
   }
   getLevel(): number {

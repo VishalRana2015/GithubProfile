@@ -37,7 +37,6 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
      ContactComponent,
      ReadmeComponent,
      SkillCardComponent,
-
     ],
   imports: [
     BrowserModule,
@@ -46,7 +45,7 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
     MatSnackBarModule,
     MatProgressSpinnerModule,
     MatDialogModule,
-    MatButtonModule, 
+    MatButtonModule,
     MarkdownModule.forRoot(),
     HttpClientModule
   ],
