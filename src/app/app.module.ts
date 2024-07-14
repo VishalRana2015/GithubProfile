@@ -22,26 +22,31 @@ import { ContactComponent } from './contact/contact.component';
 import { ReadmeComponent } from './readme/readme.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { SkillCardComponent } from './skill-card/skill-card.component';
+import { ScrollSpyDirective } from './scroll-spy.directive';
 
 @NgModule({
   declarations: [
-     AppComponent,
-     HeaderComponent,
-     HomeComponent,
-     AboutComponent,
-     ProfileComponent,
-     PortfolioComponent,
-     SkillsComponent,
-     ResumeComponent,
-     WhyMeComponent,
-     ContactComponent,
-     ReadmeComponent,
-     SkillCardComponent,
-    ],
+    AppComponent,
+    HeaderComponent,
+    HomeComponent,
+    AboutComponent,
+    ProfileComponent,
+    PortfolioComponent,
+    SkillsComponent,
+    ResumeComponent,
+    WhyMeComponent,
+    ReadmeComponent,
+    SkillCardComponent,
+    ContactComponent,
+    ScrollSpyDirective,
+
+  ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    AppRoutingModule,
     MatSnackBarModule,
     MatProgressSpinnerModule,
     MatDialogModule,

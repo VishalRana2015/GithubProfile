@@ -7,7 +7,7 @@ body{
 
 /* Regular CSS for active link */
 .nav-links a.active {
-  color: yellow!important; /* Change to your desired active link color */
+  color: yellow; /* Change to your desired active link color */
 }
 
 
@@ -15,5 +15,20 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
-
+.animated-gradient {
+  background: linear-gradient(270deg, #833ab4, #fd1d1d, #fcb045);
+  background-size: 200% 200%;
+  animation: gradient 10s ease infinite;
+}
