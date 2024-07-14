@@ -45,7 +45,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     MatProgressSpinnerModule,
     MatDialogModule,
     MatButtonModule, 
-    MarkdownModule,
+    MarkdownModule.forRoot(),
     HttpClientModule
   ],
   providers: [

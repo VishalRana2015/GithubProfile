@@ -15,9 +15,12 @@ export class SkillsComponent {
 
   openDialog() {
     let dialogRef = this.dialog.open(ReadmeComponent, {
-      src: this.getFile(),
-      title: "Mandlebrot Readme"
+      data: {
+        src: this.getFile(),
+        title: "MandleBrot Readme"
+      }
     });
+
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
