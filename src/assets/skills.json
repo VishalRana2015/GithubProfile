@@ -1,0 +1,189 @@
+{
+  "skillCategories": {
+    "Backend": [
+      {
+        "src": "https://user-images.githubusercontent.com/25181517/117201156-9a724800-adec-11eb-9a9d-3cd0f67da4bc.png",
+        "alt": "Java Image",
+        "height": 70,
+        "width": 70,
+        "level": 4
+      },
+      {
+        "src": "https://user-images.githubusercontent.com/25181517/183892787-bca94a0e-ffcb-4eeb-8137-e0fc4e446c25.png",
+        "alt": "Grrovy",
+        "height": 70,
+        "width": 70,
+        "level": 4
+      },
+      {
+        "src": "https://user-images.githubusercontent.com/25181517/183891303-41f257f8-6b3d-487c-aa56-c497b880d0fb.png",
+        "alt": "Spring Boot",
+        "height": 70,
+        "width": 70,
+        "level": 4
+      },
+      {
+        "src": "https://github.com/VishalRana2015/VishalRana2015/assets/69715143/08abafde-738c-47e6-aeed-0980c7a020e1",
+        "alt": "Grails",
+        "height": 70,
+        "width": 70,
+        "level": 4
+      },
+      {
+        "src": "https://user-images.githubusercontent.com/25181517/117207493-49665200-adf4-11eb-808e-a9c0fcc2a0a0.png",
+        "alt": "Hibernate",
+        "height": 70,
+        "width": 70,
+        "level": 4
+      },
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/190229463-87fa862f-ccf0-48da-8023-940d287df610.png",
+        "alt" : "Lombok",
+        "height" : 70,
+        "width" : 70,
+        "level" : 4
+      },
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/117207242-07d5a700-adf4-11eb-975e-be04e62b984b.png",
+        "alt" : "Maven",
+        "height" : 70,
+        "width" : 70,
+        "level" : 4
+      },
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/183894676-137319b5-1364-4b6a-ba4f-e9fc94ddc4aa.png",
+        "alt" : "Tomcat",
+        "height" : 70,
+        "width" : 70,
+        "level" : 3
+      },
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/192107858-fe19f043-c502-4009-8c47-476fc89718ad.png",
+        "alt" : "Java",
+        "height" : 70,
+        "width" : 70,
+        "level" : 4
+      },
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/186711335-a3729606-5a78-4496-9a36-06efcc74f800.png",
+        "alt" : "Swagger",
+        "height" : 70,
+        "width" : 70,
+        "level" : 3
+      },
+      {
+        "src" : "https://cdn.brighttalk.com/ams/california/images/channel/19357/image_840418.png",
+        "alt" : "Auth0",
+        "width" : 70,
+        "height" : 70,
+        "level" : 4
+      }
+    ],
+    "Backend Testing Frameworks and Tools" : [
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/117533873-484d4480-afef-11eb-9fad-67c8605e3592.png",
+        "alt" : "Junit",
+        "height" : 70,
+        "width" : 70,
+        "level" : 4
+      },
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/202540780-999f189c-341a-438e-a7e3-b0838fda6645.png",
+        "alt" : "Spock Framework",
+        "height" : 70,
+        "width" : 70,
+        "level" : 4
+      },
+      {
+        "src" : "https://github.com/VishalRana2015/VishalRana2015/assets/69715143/f4bbc140-ad18-4b36-89cc-b03b82b21235",
+        "alt" : "Mockito",
+        "height" : 70,
+        "width" : 70,
+        "level" : 4
+      },
+      {
+        "src" : "https://github.com/VishalRana2015/VishalRana2015/assets/69715143/d764cfed-a7ff-4131-b021-ba752c342d69",
+        "alt" : "Jmeter-Performance Testing Tool",
+        "width" : 100,
+        "height" : 70,
+        "level" : 4
+      }
+    ],
+    "Databases" : [
+        {
+          "src" : "https://user-images.githubusercontent.com/25181517/117208736-bdedc080-adf5-11eb-912f-61c7d43705f6.pn",
+          "alt" : "Oracle",
+          "level" : 4
+        },
+        {
+          "src" : "https://user-images.githubusercontent.com/25181517/117208740-bfb78400-adf5-11eb-97bb-09072b6bedfc.png",
+          "alt" : "Postgresql",
+          "level" : 4
+        },
+        {
+          "src" : "https://user-images.githubusercontent.com/25181517/183896128-ec99105a-ec1a-4d85-b08b-1aa1620b2046.png",
+          "alt" : "MySql",
+          "level" : 4
+        }
+    ],
+
+    "Cloud" : [
+        {
+          "src" : "https://user-images.githubusercontent.com/25181517/183896132-54262f2e-6d98-41e3-8888-e40ab5a17326.png",
+          "alt" : "Certified AWS Developer Associate",
+          "level" : 4
+        },
+        {
+          "src" : "https://cdn.brighttalk.com/ams/california/images/channel/19357/image_840418.png",
+          "alt" : "Auth0",
+          "level" : 4
+        }
+    ],
+    "Operating Systems" : [
+        {
+          "src" : "https://github.com/marwin1991/profile-technology-icons/assets/76662862/2481dc48-be6b-4ebb-9e8c-3b957efe69fa",
+          "alt" : "Linux"
+        },
+        {
+          "src" : "https://user-images.githubusercontent.com/25181517/186884153-99edc188-e4aa-4c84-91b0-e2df260ebc33.png",
+          "alt" : "Ubuntu"
+        },
+        {
+          "src" : "https://user-images.githubusercontent.com/25181517/186884150-05e9ff6d-340e-4802-9533-2c3f02363ee3.png",
+          "alt" : "Windows",
+          "level" : 0
+        }
+    ],
+    "C / C++" : [
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/192106070-46255bcf-65e6-4c6b-a296-bf8d0d8fb2a7.png",
+        "alt" : "C",
+        "level" : 3
+      },
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/192106073-90fffafe-3562-4ff9-a37e-c77a2da0ff58.png",
+        "alt" : "C++",
+        "level" : 3
+      }
+    ],
+    "Frontend": [
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png",
+        "alt": "Java Image",
+        "height": 70,
+        "width": 70,
+        "level" : 3
+      },
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png",
+        "alt" : "Typescript",
+        "level": 2
+      },
+      {
+        "src" : "https://user-images.githubusercontent.com/25181517/183890595-779a7e64-3f43-4634-bad2-eceef4e80268.png",
+        "alt" : "Angular",
+        "level" : 2
+      }
+    ]
+  }
+}

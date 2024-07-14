@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class SkillCardComponent {
   @Input() src: string = 'no image';
-  @Input() level: number = 1;
+  @Input() level: number = 0;
   @Input() alt: string = 'Alternate text';
   @Input() height: number = 70;
   @Input() width: number = 70;
