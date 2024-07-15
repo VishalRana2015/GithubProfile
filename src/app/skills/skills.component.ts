@@ -15,11 +15,7 @@ export class SkillsComponent {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    console.log("ngOnInit");
-    console.log("data: ", data);
-    console.log(data.skillCategories);
     this.skillCategories = data.skillCategories;
-    console.log(this.skillCategories);
   }
 
   openDialog() {
@@ -41,11 +37,7 @@ export class SkillsComponent {
   }
 
   getTitles() : string[] {
-    console.log("printing skill categories");
-    console.log(this.skillCategories);
     let keys = Object.keys(this.skillCategories);
-    console.log("printing keys");
-    console.log(keys);
     return keys;
   }
 

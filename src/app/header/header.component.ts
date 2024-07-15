@@ -50,15 +50,11 @@ export class HeaderComponent {
       const element = document.querySelector(section);
       if (element) {
         const rect = element.getBoundingClientRect();
-        console.log(
-          `Section: ${section}, Top: ${rect.top}, Bottom: ${rect.bottom}`
-        );
         if (
           rect.top <= window.innerHeight / 2 &&
           rect.bottom >= window.innerHeight / 2
         ) {
           this.activeSection = section.slice(1); // remove '#' from section ID
-          console.log(`Active Section: ${this.activeSection}`);
           break;
         }
       }

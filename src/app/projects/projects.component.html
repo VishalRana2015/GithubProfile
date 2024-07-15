@@ -1,11 +1,12 @@
 <div class="min-h-screen bg-gradient-to-b from-blue-400 to-purple-600">
   <div class="container mx-auto px-4 py-8">
     <div *ngIf="projects && projects.length > 0">
-      <div *ngFor="let project of projects" class="bg-white shadow-lg rounded-lg p-6">
+      <div *ngFor="let project of projects" class="bg-white shadow-lg rounded-lg p-6 mb-10">
         <h3 class="text-2xl fond-bold mb-2"> {{project.title}}</h3>
         <p class="text-lg"><strong>Tech Stack: </strong> {{project.tech}}</p>
-        <div *ngIf="project.readme != undefined" class="text-center">
-
+        <p class="text-lg">{{project.description}}</p>
+        <div *ngIf="project.readmeUrl" class="text-center">
+            <button (click)="openDialog(project.readmeUrl, project.title)" class="text-button">Click to View More</button>
         </div>
       </div>
     </div>
