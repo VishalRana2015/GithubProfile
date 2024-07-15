@@ -1,0 +1,16 @@
+{
+  "projects" : [
+    {
+      "title" : "Project Title ",
+      "tech" : "Java, Spring Boot",
+      "description" : "Learning Spring Boot with Java",
+      "readmeFile" : "../assets/readme/mandelbrot.md"
+    },
+    {
+      "title" : "Project Title ",
+      "tech" : "Java, Spring Boot",
+      "description" : "Learning Spring Boot with Java",
+      "readmeFile" : "../assets/readme/mandelbrot.md"
+    }
+  ]
+}
