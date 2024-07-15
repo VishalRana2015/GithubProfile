@@ -23,6 +23,7 @@ import { ReadmeComponent } from './readme/readme.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { SkillCardComponent } from './skill-card/skill-card.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { ScrollSpyDirective } from './scroll-spy.directive';
     SkillCardComponent,
     ContactComponent,
     ScrollSpyDirective,
+    ProjectsComponent,
 
   ],
   imports: [
