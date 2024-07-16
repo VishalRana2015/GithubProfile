@@ -1,0 +1,16 @@
+{
+  "projects" : [
+    {
+      "title" : "Project Title ",
+      "tech" : "Java, Spring Boot",
+      "description" : "Mandlebrot Renderer is a Java application that visually renders teh Mandelbrot set using JFrame. This prooject offers an interactive experience for exploring one of the most famous fractals in mathematics. The Mandelbrot set is a set of complex numbers that produces intricate and infinitely detailed patterns, showcasing the beauty and complexity of mathematical structures.",
+      "readmeUrl" : "../assets/readme/mandelbrot.md"
+    },
+    {
+      "title" : "Project Title ",
+      "tech" : "Java, Spring Boot",
+      "description" : "Mandlebrot Renderer is a Java application that visually renders teh Mandelbrot set using JFrame. This prooject offers an interactive experience for exploring one of the most famous fractals in mathematics. The Mandelbrot set is a set of complex numbers that produces intricate and infinitely detailed patterns, showcasing the beauty and complexity of mathematical structures.",
+      "readmeUrl" : "../assets/readme/mandelbrot.md"
+    }
+  ]
+}

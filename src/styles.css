@@ -1,8 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 
 body{
   margin: 0;
@@ -13,6 +9,11 @@ body{
 .nav-links a.active {
   color: yellow; /* Change to your desired active link color */
 }
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
 
 @keyframes gradient {
   0% {
@@ -31,6 +32,3 @@ body{
   background-size: 200% 200%;
   animation: gradient 10s ease infinite;
 }
-
-
-

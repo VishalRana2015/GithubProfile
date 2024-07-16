@@ -6,7 +6,7 @@
     <div class="nav-links hidden md:flex items-center space-x-6">
       <a *ngFor="let data of menu" [routerLink]="data.link" (click)="scrollTo(data.link)"
          [class.active]="isActive(data.link) || activeSection === data.menu.toLowerCase()"
-         class="nav-link text-gray-600 hover:text-gray-800 transition duration-300">
+         class="nav-link text-gray-600 hover:text-gray-800 transition duration-300 text-nowrap">
         {{ data.menu }}
       </a>
     </div>
@@ -27,7 +27,7 @@
     <div class="flex flex-col items-center mt-20">
       <a *ngFor="let data of menu" [routerLink]="data.link" (click)="scrollTo(data.link)"
          [class.active]="isActive(data.link) || activeSection === data.menu.toLowerCase()"
-         class="nav-link text-gray-600 hover:text-gray-800 transition duration-300 py-4">
+         class="nav-link text-gray-600 hover:text-gray-800 transition duration-300 py-4 text-nowrap">
         {{ data.menu }}
       </a>
     </div>
