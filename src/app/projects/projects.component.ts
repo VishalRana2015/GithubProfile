@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ReadmeComponent } from '../readme/readme.component';
+import { ReadmeComponent } from './readme/readme.component';
 import data from '../../assets/projects.json';
 
 @Component({

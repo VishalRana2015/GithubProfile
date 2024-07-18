@@ -19,12 +19,12 @@ import { SkillsComponent } from './skills/skills.component';
 import { ResumeComponent } from './resume/resume.component';
 import { WhyMeComponent } from './why-me/why-me.component';
 import { ContactComponent } from './contact/contact.component';
-import { ReadmeComponent } from './readme/readme.component';
+import { ReadmeComponent } from './projects/readme/readme.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { SkillCardComponent } from './skill-card/skill-card.component';
+import { SkillCardComponent } from './skills/skill-card/skill-card.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { ProjectsComponent } from './projects/projects.component';
-import { AwardComponent } from './award/award.component';
+import { AwardComponent } from './why-me/award/award.component';
 
 @NgModule({
   declarations: [
