@@ -4,30 +4,44 @@
 
     <!-- Desktop navigation links -->
     <div class="nav-links hidden md:flex items-center space-x-6">
-      <a *ngFor="let data of menu" [routerLink]="data.link" (click)="scrollTo(data.link)"
-         [class.active]="isActive(data.link) || activeSection === data.menu.toLowerCase()"
-         class="nav-link text-gray-600 hover:text-gray-800 transition duration-300 text-nowrap">
+      <a
+        *ngFor="let data of menu"
+        [routerLink]="data.link"
+        (click)="scrollTo(data.link)"
+        [class.active]="
+          isActive(data.link) || activeSection === data.menu.toLowerCase()
+        "
+        class="nav-link text-gray-600 hover:text-gray-800 transition duration-300 text-nowrap"
+      >
         {{ data.menu }}
       </a>
     </div>
 
     <!-- Mobile burger menu -->
     <div class="burger md:hidden flex items-center" (click)="toggleMenu()">
-      <div class="line1 w-6 h-px bg-gray-800"></div>
-      <div class="line2 w-6 h-px bg-gray-800 my-1"></div>
-      <div class="line3 w-6 h-px bg-gray-800"></div>
+      <mat-icon class="m-8 transform scale-150" [color]="'primary'">menu</mat-icon>
     </div>
   </div>
 
   <!-- Mobile navigation links -->
-  <div class="nav-links-mobile md:hidden bg-white fixed top-0 left-0 h-screen w-4/5 z-50 transform translate-x-full transition duration-300"
-       [ngClass]="{'translate-x-0': isMenuOpen}">
-    <button class="close-btn absolute top-4 right-4 text-gray-800"
-            (click)="toggleMenu()">Close</button>
+  <div
+  *ngIf="isMenuOpen"
+    class="nav-links-mobile md:hidden bg-white fixed top-0 right-0 h-screen w-4/5 z-30 transform transition-all duration-1000">
+    <div class="absolute top-8 right-8">
+      <button class="mx-6 mb-8 mt-8" (click)="toggleMenu()">
+        <mat-icon class="transform scale-150" [color]="'primary'" >close</mat-icon>
+      </button>
+    </div>
     <div class="flex flex-col items-center mt-20">
-      <a *ngFor="let data of menu" [routerLink]="data.link" (click)="scrollTo(data.link)"
-         [class.active]="isActive(data.link) || activeSection === data.menu.toLowerCase()"
-         class="nav-link text-gray-600 hover:text-gray-800 transition duration-300 py-4 text-nowrap">
+      <a
+        *ngFor="let data of menu"
+        [routerLink]="data.link"
+        (click)="scrollTo(data.link)"
+        [class.active]="
+          isActive(data.link) || activeSection === data.menu.toLowerCase()
+        "
+        class="nav-link text-gray-600 hover:text-gray-800 transition duration-300 py-4 text-nowrap"
+      >
         {{ data.menu }}
       </a>
     </div>
