@@ -5,8 +5,8 @@
     <div class="mb-6 text-center">
       <h1 class="text-2xl font-semibold text-gray-800">Contact Me</h1>
     </div>
-    <div class="contact-form-container grid grid-cols-2">
-      <div class="p-6">
+    <div class="contact-form-container sm:grid lg:grid-cols-2 sm:grid-cols-1">
+      <div class="p-6 sm:order-2 lg:order-1">
         <p>
           Thanks for visiting! Iam stocked that you would like to get in touch
           with me.
@@ -36,27 +36,37 @@
           />
           {{ emailAddress }}
         </div>
-        <div
-          class="flex flex-row align-baseline justify-center content-center"
-        >
-        <div *ngFor="let item of connectWithMeItems" class="mx-3 mt-4 mb-10">
+        <div class="flex flex-row align-baseline justify-center content-center">
+          <div *ngFor="let item of connectWithMeItems" class="mx-3 mt-4 mb-10">
             <a *ngIf="item.url" [href]="item.url">
-              <img [src]="item.iconUrl" height="40" width="40" [alt]="item.title">
+              <img
+                [src]="item.iconUrl"
+                height="40"
+                width="40"
+                [alt]="item.title"
+              />
             </a>
+          </div>
+        </div>
+        <h6 class="text-center font-bold">Follow Me on</h6>
+        <div class="flex flex-row align-baseline justify-center content-center">
+          <div *ngFor="let item of followMeOnItems" class="mx-3 mb-10">
+            <a *ngIf="item.url" [href]="item.url" target="_blank">
+              <img
+                [src]="item.iconUrl"
+                height="40"
+                width="40"
+                [alt]="item.title"
+              />
+            </a>
+          </div>
         </div>
       </div>
-      <h6 class="text-center font-bold">Follow Me on</h6>
-      <div
-      class="flex flex-row align-baseline justify-center content-center">
-
-      <div *ngFor="let item of followMeOnItems" class="mx-3 mb-10">
-        <a *ngIf="item.url" [href]="item.url" target="_blank">
-          <img [src]="item.iconUrl" height="40" width="40" [alt]="item.title">
-        </a>
-      </div>
-    </div>
-      </div>
-      <form [formGroup]="contactForm" (ngSubmit)="submit()" class="space-y-6">
+      <form
+        [formGroup]="contactForm"
+        (ngSubmit)="submit()"
+        class="space-y-6 sm:order-1 lg:order-2 relative"
+      >
         <div>
           <label for="name" class="block text-sm font-medium text-gray-700"
             >Name:</label
@@ -143,11 +153,17 @@
         <div class="text-center">
           <button
             type="submit"
-            [disabled]="contactForm.invalid"
+            [disabled]="contactForm.invalid || isLoading || isSafeDisabled"
             class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 disabled:opacity-50"
           >
             Submit
           </button>
+        </div>
+        <div
+          *ngIf="isLoading"
+          class="absolute grid grid-col-1 top-0 left-0 min-w-full min-h-full justify-center content-center z-10 opacity-30"
+        >
+          <mat-spinner></mat-spinner>
         </div>
       </form>
     </div>

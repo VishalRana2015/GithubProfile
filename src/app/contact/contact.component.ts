@@ -18,13 +18,17 @@ class SocialMediaContactInfo {
   }
 }
 
+const waitTime: number = 30000;
+
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })
+
 export class ContactComponent {
   isLoading: boolean = false;
+  isSafeDisabled: boolean = false;
   emailAddress : string | undefined;
   connectWithMeItems : SocialMediaContactInfo[] = [];
   followMeOnItems: SocialMediaContactInfo[] = [];
@@ -49,6 +53,7 @@ export class ContactComponent {
 
   submit() {
     this.showLoadingIndicator();
+    this.isSafeDisabled = true;
     const data = {
       service_id: config.serviceId,
       template_id: config.templateId,
@@ -84,6 +89,9 @@ export class ContactComponent {
       console.log(error);
     }).finally(() => {
       this.stopShowingLoadingIndicator();
+      setTimeout( () => {
+        this.isSafeDisabled = false;
+      }, waitTime);
     });
   }
 
