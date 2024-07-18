@@ -1,0 +1,56 @@
+{
+  "emailAddress" : "",
+  "connectWithMe": [
+    {
+      "icon": "/assets/images/svg/linkedin-svgrepo-com.svg",
+      "url": "https://www.google.com",
+      "title": "Your linked in handle"
+    },
+    {
+      "icon": "/assets/images/svg/twitter-color-svgrepo-com.svg",
+      "url": "https://www.google.com",
+      "title": "Your twitter in handle"
+    },
+    {
+      "icon": "/assets/images/svg/emailBlack.svg",
+      "url": "www.google.com",
+      "title": "Youremail in handle"
+    },
+    {
+      "icon": "/assets/images/svg/instagram-svgrepo-com.svg",
+      "url": "https://www.google.com",
+      "title": "Instagram"
+    },
+    {
+      "icon": "/assets/images/svg/facebook-rounded-svgrepo-com.svg",
+      "url": "https://www.google.com",
+      "title": "Facebook"
+    }
+  ],
+  "followMeOn": [
+    {
+      "icon": "/assets/images/svg/geeksforgeeks-svgrepo-com.svg",
+      "url": "https://www.google.com",
+      "title": "GeeksForGeeks"
+    },
+    {
+      "icon": "/assets/images/svg/leetcode-svgrepo-com.svg",
+      "url": "https://www.google.com",
+      "title": "Leetcode"
+    },
+    {
+      "icon": "/assets/images/svg/medium-svgrepo-com.svg",
+      "url": "https://www.google.com",
+      "title": "Medium"
+    },
+    {
+      "icon": "/assets/images/svg/stackoverflow-icon-svgrepo-com.svg",
+      "url": "https://www.google.com",
+      "title": "Stackoverflow"
+    },
+    {
+      "icon": "/assets/images/svg/youtube-color-svgrepo-com.svg",
+      "title": "Youtube"
+    }
+  ]
+}

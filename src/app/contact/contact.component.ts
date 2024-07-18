@@ -1,8 +1,22 @@
 import { Component } from '@angular/core';
-import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { FormControl, FormGroup, UntypedFormArray, Validators } from '@angular/forms';
 import config from '../../assets/emailConfig.json'
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { MatProgressSpinner } from '@angular/material/progress-spinner';
+
+import data from '../../assets/contact.json'
+
+class SocialMediaContactInfo {
+  iconUrl : string ;
+  url !: string | undefined;
+  title !: string;
+
+  constructor(iconUrl: string, url: string | undefined, title: string){
+    this.iconUrl = iconUrl;
+    this.url = url;
+    this.title = title;
+  }
+}
 
 @Component({
   selector: 'app-contact',
@@ -11,6 +25,9 @@ import { MatProgressSpinner } from '@angular/material/progress-spinner';
 })
 export class ContactComponent {
   isLoading: boolean = false;
+  emailAddress : string | undefined;
+  connectWithMeItems : SocialMediaContactInfo[] = [];
+  followMeOnItems: SocialMediaContactInfo[] = [];
   contactForm = new FormGroup({
     name: new FormControl<String>('', [Validators.required]),
     email: new FormControl<String>('', [Validators.required, Validators.email]),
@@ -21,6 +38,14 @@ export class ContactComponent {
   constructor(private snackBar: MatSnackBar) {
   }
 
+
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    this.emailAddress = data.emailAddress;
+    this.connectWithMeItems= data.connectWithMe.map( item => new SocialMediaContactInfo(item.icon, item.url, item.title));
+    this.followMeOnItems = data.followMeOn.map( item => new SocialMediaContactInfo(item.icon, item.url, item.title));
+  }
 
   submit() {
     this.showLoadingIndicator();

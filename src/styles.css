@@ -32,3 +32,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   background-size: 200% 200%;
   animation: gradient 10s ease infinite;
 }
+
+.display-initial{
+  @apply hidden;
+  display: initial;
+}
+
+
+.container-min-w {
+  @apply min-w-[640px];
+}
