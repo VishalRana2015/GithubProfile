@@ -10,10 +10,10 @@ export class HeaderComponent {
   menu = [
     { link: '#home', menu: 'Home' },
     { link: '#profile', menu: 'Profile' },
-    { link: '#skills', menu: 'Skills' },
     { link: '#portfolio', menu: 'Portfolio' },
     { link: '#projects', menu: 'Projects' },
     { link: '#why-me', menu: 'Why Me' },
+    { link: '#skills', menu: 'Skills' },
     { link: '#contact', menu: 'Contact' },
   ];
 

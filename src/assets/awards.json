@@ -1,0 +1,60 @@
+{
+  "awards": {
+    "Professional Awards": [
+      {
+        "icon": "/assets/images/rewardExcellence.png",
+        "title": "Award Title",
+        "date": "2019",
+        "issuedBy": "Deloitte",
+        "description": "Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. ",
+        "highlights": [
+          "MainPoint1",
+          "mainPoint2",
+          "mainPoint3",
+          "Main point 4",
+          "Main point5",
+          "Main Point6"
+        ],
+        "original": [
+          "link to original"
+        ]
+      },
+      {
+        "icon": "/assets/images/rewardExcellence.png",
+        "title": "Award Title",
+        "date": "2019",
+        "issuedBy": "Deloitte",
+        "description": "Description about award",
+        "original": [
+          "link to original"
+        ]
+      }
+    ],
+    "Certifications": [
+      {
+        "icon": "/assets/images/awsDeveloperAssociate.png",
+        "title": "AWS Certified Developer Associate",
+        "date": "2022",
+        "issuedBy": "AWS",
+        "descrition": "AWS Certified Developer Associate",
+        "original": "www.google.com"
+      },
+      {
+        "icon": "/assets/images/awsDeveloperAssociate.png",
+        "title": "AWS Certified Developer Associate",
+        "date": "2022",
+        "issuedBy": "AWS",
+        "descrition": "AWS Certified Developer Associate",
+        "original": "www.google.com"
+      }
+    ],
+    "Academic Awards": [
+      {
+        "data" : "Successfully passed multiple regorous exams to qualify for the highly selective National Mathematical exam, earning 5% discount on admission to IIIT after high school."
+      },
+      {
+        "data" : "Successfully passed multiple regorous exams to qualify for the highly selective National Mathematical exam, earning 5% discount on admission to IIIT after high school."
+      }
+    ]
+  }
+}

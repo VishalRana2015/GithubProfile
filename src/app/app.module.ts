@@ -24,6 +24,7 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
 import { SkillCardComponent } from './skill-card/skill-card.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { ProjectsComponent } from './projects/projects.component';
+import { AwardComponent } from './award/award.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ProjectsComponent } from './projects/projects.component';
     ContactComponent,
     ScrollSpyDirective,
     ProjectsComponent,
+    AwardComponent,
 
   ],
   imports: [

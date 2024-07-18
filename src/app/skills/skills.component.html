@@ -1,13 +1,25 @@
-<h1 class="text-4xl font-bold mb-4 text-gray-800">Skills </h1>
-<div class="container mx-auto px-4 py-8">
-  <div *ngIf="skillCategories">
-    <div *ngFor="let skillTitle of getTitles()" class="text-2xl font-bold mb-2 text-gray-800">
-      {{skillTitle}}
-      <div class="flex flex-row justify-start items-baseline flex-wrap">
-        <app-skill-card *ngFor="let skill of getSkills(skillTitle)"
-        [src]="skill.src" [alt]="skill.alt" [height]="skill.height?skill.height:70" [width]="skill.width?skill.width:70" [level]="skill.level?skill.level:0" ></app-skill-card>
+<div class="container-min-w items-center content-center">
+  <h3 class="text-2xl font-bold mb-4 text-gray-800 text-center content-center">
+    Skills
+  </h3>
+  <div class="container-min-w container mx-auto px-4 py-8">
+    <div *ngIf="skillCategories">
+      <div
+        *ngFor="let skillTitle of getTitles()"
+        class="text-2xl font-bold mb-2 text-gray-800"
+      >
+        <h5 class="font-bold text-nowrap text-xl">{{ skillTitle }}</h5>
+        <div class="flex flex-row justify-start items-baseline flex-wrap">
+          <app-skill-card
+            *ngFor="let skill of getSkills(skillTitle)"
+            [src]="skill.src"
+            [alt]="skill.alt"
+            [height]="skill.height ? skill.height : 70"
+            [width]="skill.width ? skill.width : 70"
+            [level]="skill.level ? skill.level : 0"
+          ></app-skill-card>
+        </div>
       </div>
     </div>
   </div>
 </div>
-
