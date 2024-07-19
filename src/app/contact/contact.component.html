@@ -1,5 +1,5 @@
 <div
-  class="container-min-w flex flex-col items-center justify-center py-12 animated-gradient"
+  class="container min-w-[640px] flex flex-col mx-auto align-middle py-12 animated-gradient"
 >
   <div class="container mx-auto shadow-md rounded-lg p-6">
     <div class="mb-6 text-center">
@@ -38,13 +38,14 @@
         </div>
         <div class="flex flex-row align-baseline justify-center content-center">
           <div *ngFor="let item of connectWithMeItems" class="mx-3 mt-4 mb-10">
-            <a *ngIf="item.url" [href]="item.url">
+            <a *ngIf="item.url" [href]="item.url" target="_blank">
               <img
                 [src]="item.iconUrl"
                 height="40"
                 width="40"
                 [alt]="item.title"
-              />
+                [title]="item.title"
+              >
             </a>
           </div>
         </div>
@@ -57,7 +58,8 @@
                 height="40"
                 width="40"
                 [alt]="item.title"
-              />
+                [title]="item.title"
+              >
             </a>
           </div>
         </div>
