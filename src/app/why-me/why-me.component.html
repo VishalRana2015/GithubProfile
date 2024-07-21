@@ -8,16 +8,35 @@
         {{ category }}
       </h5>
 
-      <div *ngIf="!category.toLowerCase().includes('academic')">
+      <div
+        *ngIf="
+          !category.toLowerCase().includes('academic') &&
+          !category.toLowerCase().includes('certification')
+        "
+      >
         <app-award
           *ngFor="let item of getItems(category)"
           [icon]="item.icon"
           [title]="item.title"
-          [date]="item.date"
+          [issuedOn]="item.date"
           [description]="item.description"
           [issuedBy]="item.issuedBy"
           [highlights]="item.highlights"
+          [links]="item.links != undefined ? item.links : []"
         ></app-award>
+      </div>
+
+      <div *ngIf="category.toLowerCase().includes('certification')">
+        <app-certification
+          *ngFor="let item of getItems(category)"
+          [icon]="item.icon"
+          [title]="item.title"
+          [issuedOn]="item.issuedOn"
+          [issuedBy]="item.issuedBy"
+          [description]="item.description"
+          [credlyBadge]="item.credlyBadge"
+          [links]="item?.links"
+        ></app-certification>
       </div>
 
       <div *ngIf="category.toLowerCase().includes('academic')">

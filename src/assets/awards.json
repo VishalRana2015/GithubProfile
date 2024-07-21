@@ -3,9 +3,61 @@
     "Professional Awards": [
       {
         "icon": "/assets/images/rewardExcellence.png",
-        "title": "Award Title",
-        "date": "2019",
-        "issuedBy": "Deloitte",
+        "title": "Spot Award: Database Queries Optimization",
+        "date": "March 2024",
+        "issuedBy": "Hashedin by Deloitte",
+        "description": "Description about award",
+        "links": [
+          {
+            "url": "/assets/awards/2024-03 March Spot Award.pdf",
+            "text": "Award Certificate"
+          }
+        ]
+      },
+      {
+        "icon": "/assets/images/rewardExcellence.png",
+        "title": "Spot Award: BigMachines Site Letter",
+        "date": "October 2023",
+        "issuedBy": "Hashedin by Deloitte",
+        "description": "Description about award",
+        "links": [
+          {
+            "url": "/assets/awards/2023-10 October Spot Award.pdf",
+            "text": "Award Certificate"
+          }
+        ]
+      },
+      {
+        "icon": "/assets/images/squadAward.png",
+        "title": "Super Squad Award",
+        "date": "September 2023",
+        "issuedBy": "Hashedin by Deloitte",
+        "description": "Description about award",
+        "links": [
+          {
+            "url": "/assets/awards/2023-09 Sep Squad of the Quarter.pdf",
+            "text": "Award Certificate"
+          }
+        ]
+      },
+      {
+        "icon": "/assets/images/rewardExcellence.png",
+        "title": "Spot Award: Ciam Migration Tool",
+        "date": "August 2023",
+        "issuedBy": "Hashedin by Deloitte",
+        "description": "Description about award",
+        "links": [
+          {
+            "url": "/assets/awards/2023-08 August Spot Award.pdf",
+            "text": "Award Certificate"
+          }
+        ]
+      },
+      {
+        "icon": "/assets/images/rewardExcellence.png",
+        "title": "Spot Awad: CUAS - CIAM (Auth0) integration",
+        "date": "June 2022",
+        "issuedBy": "Hashedin by Deloitte",
         "description": "Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. ",
         "highlights": [
           "MainPoint1",
@@ -15,45 +67,77 @@
           "Main point5",
           "Main Point6"
         ],
-        "original": [
-          "link to original"
+        "links": [
+          {
+            "url": "/assets/awards/2022-06 June Spot Award.pdf",
+            "text": "Award Certificate"
+          }
         ]
       },
       {
-        "icon": "/assets/images/rewardExcellence.png",
-        "title": "Award Title",
-        "date": "2019",
-        "issuedBy": "Deloitte",
+        "icon": "/assets/images/squadAward.png",
+        "title": "Super Squad Award",
+        "date": "April 2022",
+        "issuedBy": "Hashedin by Deloitte",
         "description": "Description about award",
-        "original": [
-          "link to original"
+        "links": [
+          {
+            "url": "/assets/awards/2022-04 Vishal Certificate - Super Squad Award .pdf",
+            "text": "Award Certificate"
+          }
         ]
       }
     ],
-    "Certifications": [
+    "Professional Certifications": [
       {
         "icon": "/assets/images/awsDeveloperAssociate.png",
-        "title": "AWS Certified Developer Associate",
-        "date": "2022",
+        "title": "AWS Certified Cloud Practitioner",
+        "issuedOn": "2022",
         "issuedBy": "AWS",
-        "descrition": "AWS Certified Developer Associate",
-        "original": "www.google.com"
+        "description": "AWS Certified Cloud Practioner - This certification validates foundational understanding on AWS cloud concepts, services and terminology. This certification demonstrate my knowledge of AWS's core services, cloud economics, billing, pricing models, and best security practices. Provides ability to effectively communicate cloud solutions and participate in cloud-relate projects. Highlights my commitment to cloud proficiency and my readiness to leverage AWS Services in various roles.",
+        "credlyBadge": {
+          "dataShareBadgeId": "18f28d73-6ae0-48ff-9d11-e736435ac348",
+          "dataShareBadgeHost": "https://www.credly.com"
+        },
+        "links": [
+          {
+            "url": "/assets/awards/AWS Certified Cloud Practitioner certificate.pdf",
+            "text": "Original Certificate"
+          },
+          {
+            "url": "/assets/awards/AWS Certified Cloud Practitione - Score Report.pdf",
+            "text": "Score Report"
+          }
+        ]
       },
       {
         "icon": "/assets/images/awsDeveloperAssociate.png",
         "title": "AWS Certified Developer Associate",
-        "date": "2022",
+        "issuedOn": "2022",
         "issuedBy": "AWS",
-        "descrition": "AWS Certified Developer Associate",
-        "original": "www.google.com"
+        "description": "AWS Certified Developer Associate - This certification validates technical expertise in developing and maintaining applications on the AWS Platform. It covers core AWS Services and proficiency in developing, deploying and debugging applications on cloud including serverless applications.",
+        "credlyBadge": {
+          "dataShareBadgeId": "53966983-699d-438f-b1b6-e61905a59868",
+          "dataShareBadgeHost": "https://www.credly.com"
+        },
+        "links": [
+          {
+            "url": "/assets/awards/AWS Certified Developer - Associate certificate.pdf",
+            "text": "Original Certificate"
+          },
+          {
+            "url": "/assets/awards/AWS Certified Developer - Associate-Score Report.pdf",
+            "text": "Score Report"
+          }
+        ]
       }
     ],
     "Academic Awards": [
       {
-        "data" : "Successfully passed multiple regorous exams to qualify for the highly selective National Mathematical exam, earning 5% discount on admission to IIIT after high school."
+        "data": "Successfully passed multiple regorous exams to qualify for the highly selective National Mathematical exam, earning 5% discount on admission to IIIT after high school."
       },
       {
-        "data" : "Successfully passed multiple regorous exams to qualify for the highly selective National Mathematical exam, earning 5% discount on admission to IIIT after high school."
+        "data": "Successfully passed multiple regorous exams to qualify for the highly selective National Mathematical exam, earning 5% discount on admission to IIIT after high school."
       }
     ]
   }

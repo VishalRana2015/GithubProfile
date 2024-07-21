@@ -8,6 +8,8 @@ import data from '../../assets/awards.json';
   styleUrl: './why-me.component.css'
 })
 export class WhyMeComponent {
+  static awardCategory = "award";
+  static certificationCategory = "certifications";
   awards !: any;
   constructor(){}
   ngOnInit(): void {

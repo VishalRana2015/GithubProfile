@@ -1,0 +1,40 @@
+<!-- hover:shadow-inner hover:translate-y-1 hover:scale-90 -->
+<div class="container border-pink border-2 md:grid md:grid-cols-4 md:grid-flow-row mb-4 hover:shadow-lg">
+  <div *ngIf="credlyBadge == undefined" class="relative flex flex-row justify-center" >
+      <img
+        class="relative"
+        [src]="icon"
+        atl="icon"
+        class="object-scale-down"
+        title="Click to open original">
+      <div
+        id="element2"
+        class="absolute min-w-full min-h-full h-20 p-8 top-0 left-0 text-center content-center font-bold text-lg bg-gray-200 z-10 hover:opacity-80 opacity-0 rounded-lg"
+      >
+        Click to View Original
+      </div>
+
+  </div>
+  <div *ngIf="credlyBadge != undefined" class="relative flex flex-row justify-center overflow-hidden">
+  <iframe [src]="badgeLink"
+  class="border-black border-2 mt-2"
+              height="300"
+              width="300"
+        name="iframe_a">
+      </iframe>
+  </div>
+
+  <div class="md:col-span-3  p-4 flex flex-col justify-start">
+    <h6 class="text-lg sm:text-center md:text-left">{{ title }}</h6>
+    <div class="text-lg"> <span class="font-bold">Issued On: </span>{{issuedOn}}</div>
+    <div class="text-lg"><span class="font-bold">Issued By: </span>{{ issuedBy }}</div>
+    <div class="indent-16 mt-4">{{ description }}</div>
+
+    <ul *ngIf="links != undefined && links.length > 0"
+      class="list-disc underline text-blue-800 mx-8 my-4 font-mono">
+      <li *ngFor="let link of links">
+        <a [href]="link.url" target="_blank"> {{link.text}}</a>
+      </li>
+    </ul>
+  </div>
+</div>

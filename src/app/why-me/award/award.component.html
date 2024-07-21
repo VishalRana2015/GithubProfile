@@ -1,27 +1,45 @@
-<div class="container border-pink border-2 md:grid md:grid-cols-4 md:grid-flow-row mb-4 hover:shadow-inner hover:translate-y-1 hover:scale-90">
-  <div class="relative flex flex-row justify-center" >
-      <img
-        class="relative"
-        [src]="icon"
-        atl="icon"
-        class="object-scale-down"
-        title="Click to open original">
-      <div
-        id="element2"
-        class="absolute min-w-full min-h-full h-20 p-8 top-0 left-0 text-center content-center font-bold text-lg bg-gray-200 z-10 hover:opacity-80 opacity-0 rounded-lg"
-      >
-        Click to View Original
-      </div>
-
+<div
+  class="container border-pink border-2 md:grid md:grid-cols-4 md:grid-flow-row mb-4 hover:shadow-lg"
+>
+  <div class="relative flex flex-row justify-center">
+    <img
+      class="relative"
+      [src]="icon"
+      atl="icon"
+      class="object-scale-down hover:cursor-pointer"
+      title="Click to open original"
+    />
+    <div
+      id="element2"
+      *ngIf="links.length > 0"
+      (click)="openInNewTab()"
+      class="absolute min-w-full min-h-full h-20 p-8 top-0 left-0 text-center content-center font-bold text-lg bg-gray-200 z-10 hover:opacity-80 opacity-0 rounded-lg hover:cursor-pointer"
+    >
+      Click to View Original
+    </div>
   </div>
-  <div class="md:col-span-3  p-4 flex flex-col justify-start">
-    <h6 class="text-lg sm:text-center md:text-left">{{ title }}</h6>
-    <div class="text-lg">Issued Date: {{ date }}</div>
+  <div class="md:col-span-3 p-4 flex flex-col justify-start">
+    <h6
+      (click)="openInNewTab()"
+      class="text-lg sm:text-center md:text-left hover:underline hover:cursor-pointer"
+    >
+      {{ title }}
+    </h6>
+    <div class="text-lg">Issued On: {{ _issuedOn }}</div>
     <div class="text-lg">Issued By: {{ issuedBy }}</div>
-    <div>{{ description }}</div>
+    <div class="indent-16 mt-4">{{ description }}</div>
     <ul *ngIf="highlights" class="pl-8 pt-4 list-disc text-gray-70">
       <li *ngFor="let highlight of highlights">
         {{ highlight }}
+      </li>
+    </ul>
+
+    <ul
+      *ngIf="links.length > 0"
+      class="list-disc font-mono ml-16 mt-8 text-blue-800 underline"
+    >
+      <li *ngFor="let link of links">
+        <a [href]="link.url">{{ link.text }}</a>
       </li>
     </ul>
   </div>
