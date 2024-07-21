@@ -26,6 +26,11 @@
   font-weight: bold;
 }
 
+.nav-link.active-mobile{
+  color : blue!important;
+
+}
+
 .nav-links a {
   color: #fff;
   text-decoration: none;
