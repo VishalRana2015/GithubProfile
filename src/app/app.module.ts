@@ -26,6 +26,7 @@ import { SkillCardComponent } from './skills/skill-card/skill-card.component';
 import { ScrollSpyDirective } from './scroll-spy.directive';
 import { ProjectsComponent } from './projects/projects.component';
 import { AwardComponent } from './why-me/award/award.component';
+import { CertificationComponent } from './why-me/certification/certification.component';
 
 @NgModule({
   declarations: [
@@ -44,6 +45,7 @@ import { AwardComponent } from './why-me/award/award.component';
     ScrollSpyDirective,
     ProjectsComponent,
     AwardComponent,
+    CertificationComponent,
 
   ],
   imports: [
