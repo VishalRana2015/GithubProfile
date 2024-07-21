@@ -1,0 +1,44 @@
+{
+  "education" : [
+    {
+      "icon" : "/assets/images/pu-logo.png",
+      "institutionName" : "Punjab University",
+      "institutionLink" : "https://dcsa.puchd.ac.in/",
+      "course" : "Master of Computer Applications - MCA",
+      "field" : "Computer Software Engineering",
+      "attendedDates" : "2018 - 2021",
+      "achievements" : [],
+      "marks" : ""
+    },
+    {
+      "icon" : "/assets/images/college-pu.jpg",
+      "institutionName" : "Punjab University",
+      "institutionLink" : "https://www.sggscollege.ac.in/",
+      "course" : "Bachelor of Science in Computer Science - BSC (CS)",
+      "field" : "Computer Science",
+      "attendedDates" : "2015 - 2018",
+      "achievements" : [],
+      "marks" : ""
+    },
+    {
+      "icon" : "/assets/images/jvn-logo.png",
+      "institutionName" : "Jawahar Navodaya Vidyalaya, Chandigarh - JNV",
+      "institutionLink" : "https://navodaya.gov.in/nvs/ro/Chandigarh/en/home/index.html",
+      "course" : "Senior Secondary School- Class XII, CBSE",
+      "field" : "Science - Non Medical",
+      "attendedDates" : "2012-2014",
+      "achievements" : [ "Passed State and Regional Level Mathematics Olympial and appeared in National mathematics olympiad."],
+      "marks" : ""
+    },
+    {
+      "icon" : "/assets/images/jvn-logo.png",
+      "institutionName" : "Jawahar Navodaya Vidyalaya, Chandigarh - JNV",
+      "institutionLink" : "https://navodaya.gov.in/nvs/ro/Chandigarh/en/home/index.html",
+      "course" : "Secondary School - Class X",
+      "field" : "CBSE Board",
+      "attendedDates" : "2011 - 2012",
+      "achievements" : [],
+      "marks" : "9.4/10"
+    }
+  ]
+}
