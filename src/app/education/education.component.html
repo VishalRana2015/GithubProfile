@@ -1,0 +1,66 @@
+<div class="min-w-[640px] flex flex-col items-center">
+  <h3 class="font-4xl font-bold text-center">Education</h3>
+  <div
+    *ngFor="let item of education; last as isLast"
+    class="education-detail min-w-[640px] container hover:shadow-lg items-start"
+  >
+    <div class="education-decorater w-[64px] h-full mx-4 -mt-4">
+      <div class="circle"></div>
+      <div class="rectangle"></div>
+    </div>
+    <a
+      class="flex flex-row self-center cursor-pointer"
+      [href]="item.institutionLink"
+      title="Go to official website"
+      target="_blank"
+    >
+      <img
+        class="object-scale-down"
+        [src]="item.icon"
+        [alt]="item.institutionName"
+        height="200"
+        width="200"
+      />
+    </a>
+
+    <div
+      class="flex flex-col items-start p-12">
+      <h6 class="font-bold text-lg cursor-pointer hover:underline">
+        <a [href]="item.institutionLink" [title]="'Visit officia website'" target="_blank">{{ item.institutionName }} </a>
+      </h6>
+      <div>
+        {{ item.course }}
+        <span *ngIf="item.field !== undefined && item.field !== null"
+          >, {{ item.field }}
+        </span>
+      </div>
+      <div class="text-gray-600">
+        {{ item.attendedDates }}
+      </div>
+      <div>
+        {{ item.marks }}
+      </div>
+
+      <ul
+        *ngIf="
+          item.achievements !== undefined &&
+          item.achievements !== null &&
+          item.achievements.length > 0
+        "
+        class="list-disc font-mono"
+      >
+        <li *ngFor="let achievement of item.achievements">
+          {{ achievement }}
+        </li>
+      </ul>
+    </div>
+    <div
+    *ngIf="isLast"
+    class="education-decorater mb-8 w-[64px] h-[32px] mx-4 -mt-4">
+
+        <div class="circle"></div>
+
+    </div>
+  </div>
+
+</div>

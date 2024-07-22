@@ -27,6 +27,7 @@ import { ScrollSpyDirective } from './scroll-spy.directive';
 import { ProjectsComponent } from './projects/projects.component';
 import { AwardComponent } from './why-me/award/award.component';
 import { CertificationComponent } from './why-me/certification/certification.component';
+import { EducationComponent } from './education/education.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { CertificationComponent } from './why-me/certification/certification.com
     ProjectsComponent,
     AwardComponent,
     CertificationComponent,
+    EducationComponent,
 
   ],
   imports: [
