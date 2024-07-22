@@ -26,12 +26,12 @@ jobs:
     - name: Deploy to Github Pages
       GITHUB_TOKEN: ${{secrets.token}}
       run: |
-      ls -als
-      echo $GITHUB_TOKEN
-      git config --global user.name "Vishal Rana"
-      git config --global user.email ranavishal2015@gmail.com
-      git clone --depth 1 --branch gh-pages https://x-access-token:${{GITHUB_TOKEN}}@github.com/VishalRana2015/GithubProfile.git gh-pages
-      cd gh-pages
-      rm -rf *
+        ls -als
+        echo $GITHUB_TOKEN
+        git config --global user.name "Vishal Rana"
+        git config --global user.email ranavishal2015@gmail.com
+        git clone --depth 1 --branch gh-pages https://x-access-token:${{GITHUB_TOKEN}}@github.com/VishalRana2015/GithubProfile.git gh-pages
+        cd gh-pages
+        rm -rf *
 
 
