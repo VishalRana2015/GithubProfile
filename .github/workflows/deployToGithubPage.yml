@@ -24,7 +24,8 @@ jobs:
       run: npm run build
 
     - name: Deploy to Github Pages
-      GITHUB_TOKEN: ${{secrets.token}}
+      env:
+        GITHUB_TOKEN: ${{secrets.token}}
       run: |
         ls -als
         echo $GITHUB_TOKEN
