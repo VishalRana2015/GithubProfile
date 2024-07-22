@@ -28,5 +28,17 @@ jobs:
         GITHUB_TOKEN: ${{secrets.token}}
       run: |
         ls -als
+        git config --global user.name 'Vishal Rana'
+        git config --global user.email ranavishal2015@gmail.com
+        git clone https://x-access-token:${{GITHUB_TOKEN}}@github.com/
+        cd repo
+        if git show-ref --verify --quiet refs/heads/gh-pages; then
+          git checkout gh-pages
+          echo "If part executed"
+        else
+          git checkout -b gh-pages
+          echo "else part executed"
+        fi
+        
 
 
