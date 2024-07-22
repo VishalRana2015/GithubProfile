@@ -8,6 +8,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatButtonModule } from '@angular/material/button';
 import { HttpClientModule } from '@angular/common/http';
 import { MarkdownModule } from 'ngx-markdown';
+import {MatDividerModule} from '@angular/material/divider';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -62,7 +63,8 @@ import { EducationComponent } from './education/education.component';
     MatButtonModule,
     MarkdownModule.forRoot(),
     HttpClientModule,
-    MatIconModule
+    MatIconModule,
+    MatDividerModule
   ],
   providers: [
     provideAnimationsAsync()
