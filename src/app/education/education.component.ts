@@ -17,7 +17,7 @@ class Education {
     institutionLink: string,
     course: string,
     field: string,
-    attendedDates: string,
+    attendedDates : string,
     achievements: string[],
     marks: string
   ) {
@@ -62,13 +62,14 @@ export class EducationComponent {
       (item.field !== undefined && item.field !== null) &&
       (item.attendedDates !== undefined && item.attendedDates !== null);
       console.log("value : " + value);
+      console.log(item.field);
       return value;
     });
     console.log("data2: " + data2.length);
 
-    // data2.map( item => {
-    //   return new Education(item.icon, item.institutionName, item.institutionLink, item.course, item.field, item.attendedDates, (item.achievements == undefined)?[]:item.achievements, item.marks);
-    // });
-    //console.log(this.education.length);
+    this.education =  data2.map( item => {
+       return new Education(item.icon, item.institutionName, item.institutionLink, item.course, item.field, (item.attendedDates === undefined)?"undefined":item.attendedDates,
+       (item.achievements == undefined)?[]:item.achievements, item.marks);
+     });
   }
 }

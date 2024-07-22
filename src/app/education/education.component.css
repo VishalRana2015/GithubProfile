@@ -15,7 +15,15 @@
 .education-decorater .rectangle{
   background-color: gray;
   width: 6px;
-  height: 200px;
   margin-top: -5px;
   margin-left: 13px;
+}
+
+.education-detail{
+  display : grid;
+  grid-template-columns: 64px 220px 1fr ;
+}
+
+.education-decorater .rectangle{
+  height: 100%;
 }
