@@ -3,13 +3,26 @@ import { MatDialog } from '@angular/material/dialog';
 import { ReadmeComponent } from './readme/readme.component';
 import data from '../../assets/projects.json';
 
+interface Link {
+  url: string;
+  text: string;
+}
+
+interface Project {
+  title: string;
+  tech: string;
+  description: string;
+  readmeUrl: string;
+  links ?: Link[];
+}
+
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css',
 })
 export class ProjectsComponent {
-  projects: any[] = [];
+  projects: Project[] = [];
 
   constructor(private dialog: MatDialog) {}
 
