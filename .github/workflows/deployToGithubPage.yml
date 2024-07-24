@@ -31,13 +31,13 @@ jobs:
         ls -als
         git config --global user.name 'Vishal Rana'
         git config --global user.email ranavishal2015@gmail.com
-        git clone https://x-access-token:${{TOKEN}}@github.com/
+        git clone https://x-access-token:$(TOKEN)@github.com/
         cd repo
         if git show-ref --verify --quiet refs/heads/gh-pages; then
           git checkout gh-pages
           echo "If part executed"
         else
-          git checkout -b gh-pages
+          git checkout -b gh-pags
           echo "else part executed"
         fi
         
