@@ -30,12 +30,3 @@ jobs:
 
     - name: Build
       run: npm run build
-
-  deploy:
-    name: Deploy
-    runs-on: ubuntu-latest
-    steps:
-      - name: Print data on the consoel
-        run: ls -als
-
-
