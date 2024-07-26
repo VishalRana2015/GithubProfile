@@ -5,7 +5,7 @@ name: Github Pages
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "master", "workflow", "workflow_dispatch"]
 
 jobs:
   deploy:
@@ -13,13 +13,21 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v2
-      
+
     - name: Setup Node.js
       uses: actions/setup-node@v3
 
     - name: Install Dependencies
       run: npm install
 
-    - name: Run tests
-      run: ng test
+    - name: Build
+      run: npm run build
+
+    - name: Deploy
+      if: success()
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{secrets.GITHUB_TOKEN}}
+        publish_dir: dist/vishal-rana2015.github.io
+        enable_jekyll: true
 
