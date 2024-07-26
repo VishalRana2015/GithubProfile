@@ -1,45 +1,40 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: Github Pages
+name: Build and Deploy
 
 on:
-  push:
-    branches: [ "master", "workflow", "workflow_dispatch"]
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  build:
+    name: Build
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: Print data on the consoel
+      run: ls -als
+      
     - name: Setup Node.js
       uses: actions/setup-node@v3
 
     - name: Install Dependencies
       run: npm install
 
+    - name: Print data on the console
+      run: ls -als
+
     - name: Build
       run: npm run build
 
-    - name: Deploy to Github Pages
-      env:
-        TOKEN: ${{ secrets.token }}
-      run: |
-        echo ${{TOKEN}}
-        ls -als
-        git config --global user.name 'Vishal Rana'
-        git config --global user.email ranavishal2015@gmail.com
-        git clone https://x-access-token:$(TOKEN)@github.com/
-        cd repo
-        if git show-ref --verify --quiet refs/heads/gh-pages; then
-          git checkout gh-pages
-          echo "If part executed"
-        else
-          git checkout -b gh-pags
-          echo "else part executed"
-        fi
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print data on the consoel
+        run: ls -als
         
 
 
