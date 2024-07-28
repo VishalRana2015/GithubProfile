@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "buildDev" : "ng build --configuration production --base-href https://VishalRana2015.github.io/GithubProfile/",
+    "buildProd" : "ng build --configuration production --base-href https://VishalRana2015.github.io/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
