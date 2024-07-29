@@ -1,0 +1,61 @@
+{
+  "emailAddress" : "",
+  "connectWithMe": [
+    {
+      "icon": "/assets/images/svg/linkedin-svgrepo-com.svg",
+      "url": "https://www.linkedin.com",
+      "title": "Linkedin"
+    },
+    {
+      "icon": "/assets/images/svg/twitter-logo-new.svg",
+      "url": "https://www.x.com",
+      "title": "Twitter"
+    },
+    {
+      "icon": "/assets/images/svg/instagram-svgrepo-com.svg",
+      "url": "https://www.google.com",
+      "title": "Instagram"
+    },
+    {
+      "icon": "/assets/images/svg/facebook-rounded-svgrepo-com.svg",
+      "url": "https://www.facebook.com",
+      "title": "Facebook"
+    }
+  ],
+  "followMeOn": [
+    {
+      "icon": "/assets/images/svg/geeksforgeeks-svgrepo-com.svg",
+      "url": "https://www.geeksforgeeks.com",
+      "title": "GeeksForGeeks"
+    },
+    {
+      "icon": "/assets/images/svg/leetcode-svgrepo-com.svg",
+      "url": "https://www.leetcode.com",
+      "title": "Leetcode"
+    },
+    {
+      "icon": "/assets/images/svg/medium-svgrepo-com.svg",
+      "url": "https://www.medium.com",
+      "title": "Medium"
+    },
+    {
+      "icon": "/assets/images/svg/stackoverflow-icon-svgrepo-com.svg",
+      "url": "https://www.stackoverflow.com",
+      "title": "Stackoverflow"
+    },
+    {
+      "icon": "/assets/images/svg/youtube-color-svgrepo-com.svg",
+      "title": "Youtube"
+    },
+    {
+      "icon": "/assets/images/svg/hackerrank_favicon.png",
+      "url": "https://www.hackerrank.com",
+      "title": "Hackerrank"
+    },
+    {
+      "icon": "/assets/images/svg/hackerearth_favicon.png",
+      "url": "https://www.hackerearth.com",
+      "title": "Hackerearth"
+    }
+  ]
+}
