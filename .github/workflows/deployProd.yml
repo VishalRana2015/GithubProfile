@@ -1,0 +1,67 @@
+name: Deploy application to VishalRana2015.github.io
+
+on:
+  push:
+    branches:
+      - 'release*'
+  workflow_dispatch:
+
+
+
+jobs:
+  buildAndDeploy:
+    runs-on: ubuntu-latest
+    # Skipping any environment right now.
+    name: Build GithubProfile and Deploy to VishalRana2015.github.io
+    steps:
+      - name: Configure Git
+        run: |
+          git config --global user.name "Vishal Rana"
+          git config --global user.email "ranavishal2015@gmail.com"
+          git config --global url.https://${{ secrets.TOKEN }}@github.com/.insteadOf https://github.com/
+
+      - name: Clone GithubProfile repo's code
+        run: |
+          git clone https://github.com/VishalRana2015/GithubProfile.git
+
+      - name: Clone VishalRana2015.github.io repo's code from 'gh-pages' branch
+        run: |
+          git clone https://github.com/VishalRana2015/VishalRana2015.github.io.git --branch gh-pages
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+
+      - name: Install Dependencies for GithubProfile
+        run: |
+          cd GithubProfile
+          npm install
+
+      - name: Build the GithubProfile Project
+        run: |
+          cd GithubProfile
+          npm run buildProd
+
+      - name: Copy build files 'GithubProfile/dist/vishal-rana2015.github.io/browser/*' to VishalRana2015.github.io and push the changes to VishalRana2015.github.io repo at gh-pages branch.
+        run: |
+          cd VishalRana2015.github.io
+          git rm -r .
+          git clean -fxd
+          echo "After cleaning VishalRana2015.github.io repo contents, listing the contents below. We should not get anything there."
+          ls -als
+          echo "---------------------------------------------------------------------------------------------------------------"
+          cp -r ../GithubProfile/dist/vishal-rana2015.github.io/browser/* .
+          echo "After coyping the files"
+          git add .
+          # Find out if there is anything to commit
+          noCommitMsg="nothing to commit"
+          gitStatus=$(git status)
+          if echo "$gitStatus" | grep -qi "$noCommitMsg"; then
+            echo "There is nothing to commit"
+          else
+            echo "There is something to commit"
+            git commit -m "Deploying code from GithubProfile workflow"
+            git config --list
+            git remote -v
+            git branch -v
+            git push origin gh-pages
+          fi
