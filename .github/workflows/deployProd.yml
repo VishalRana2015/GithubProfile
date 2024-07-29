@@ -12,36 +12,36 @@ jobs:
   buildAndDeploy:
     runs-on: ubuntu-latest
     # Skipping any environment right now.
-    name: Build and Deploy
+    name: Build GithubProfile and Deploy to VishalRana2015.github.io
     steps:
       - name: Configure Git
-        run: | 
+        run: |
           git config --global user.name "Vishal Rana"
           git config --global user.email "ranavishal2015@gmail.com"
           git config --global url.https://${{ secrets.TOKEN }}@github.com/.insteadOf https://github.com/
 
-      - name: Clone GithubProfile repo
+      - name: Clone GithubProfile repo's code from the 'master' branch
         run: |
           git clone https://github.com/VishalRana2015/GithubProfile.git --branch master
 
-      - name: Clone VishalRana2015.github.io
+      - name: Clone VishalRana2015.github.io repo's code from 'gh-pages' branch
         run: |
           git clone https://github.com/VishalRana2015/VishalRana2015.github.io.git --branch gh-pages
-        
+
       - name: Setup Node.js
         uses: actions/setup-node@v3
 
-      - name: Install Dependencies
+      - name: Install Dependencies for GithubProfile
         run: |
           cd GithubProfile
           npm install
 
-      - name: Build
+      - name: Build the GithubProfile Project
         run: |
           cd GithubProfile
           npm run buildProd
 
-      - name: Copy build files to VishalRana2015.github.io and push it.
+      - name: Copy build files 'dist/vishal-rana2015.github.io/browser/*' to VishalRana2015.github.io and push the changes to VishalRana2015.github.io repo at gh-pages branch.
         run: |
           cd VishalRana2015.github.io
           git rm -r .
@@ -59,10 +59,9 @@ jobs:
             echo "There is nothing to commit"
           else
             echo "There is something to commit"
-            git remote add target https://${{ secrets.TOKEN }}@github.com/VishalRana2015/VishalRana2015.github.io.git
             git commit -m "Deploying code from GithubProfile workflow"
             git config --list
             git remote -v
             git branch -v
-            git push target gh-pages
+            git push origin gh-pages
           fi
