@@ -35,6 +35,12 @@
       "tech" : "C",
       "description" : "The Typing Tutor is an interactive command-line tool designed to help users improve their typing abilities, speed, and precision. It offers various lessons on keyboard usage, a built-in typing test feature, and a progress tracker. Users can register, choose lessons, practice, take tests and view their consolidated test reports. The tool includes options for expanding its functionality with editable text files for practice and testing purposes.",
       "readmeUrl" : "https://raw.githubusercontent.com/VishalRana2015/Typing-Tutor/master/README.md"
+    },
+    {
+      "title" : "Highlighter",
+      "tech" : "Java Spring Boot, Hibernate, Mysql, Angular, Chrome Extension",
+      "description" : "",
+      "readmeUrl" : ""
     }
   ]
 }
