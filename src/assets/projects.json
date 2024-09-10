@@ -3,7 +3,7 @@
     {
       "title" : "Mandlebrot",
       "tech" : "Java, Java Swing",
-      "description" : "Mandlebrot Renderer is a Java application that visually renders teh Mandelbrot set using JFrame. This prooject offers an interactive experience for exploring one of the most famous fractals in mathematics. The Mandelbrot set is a set of complex numbers that produces intricate and infinitely detailed patterns, showcasing the beauty and complexity of mathematical structures.",
+      "description" : "Mandlebrot Renderer is a Java Swing application that visually renders the Mandelbrot set. This project offers an interactive experience for exploring one of the most famous fractals in mathematics. The Mandelbrot set is a set of complex numbers that produces intricate and infinitely detailed patterns, showcasing the beauty and complexity of mathematical structures.",
       "readmeUrl" : "https://raw.githubusercontent.com/VishalRana2015/Mandelbrot/master/README.md"
     },
     {
@@ -39,8 +39,14 @@
     {
       "title" : "Highlighter",
       "tech" : "Java Spring Boot, Hibernate, Mysql, Angular, Chrome Extension",
-      "description" : "",
-      "readmeUrl" : ""
+      "description" : "I developed a Backend system of a Chrome extension application Highlighter, a tool that lets users easily highlight any text on blogs, articles, documents, and webpages. Just like marking important lines in books and papers, Highlighter allows you to save and revisit key points effortlessly, making your online reading experience more organized and efficient. To Read more and view demo of the product, visit the given below link.",
+      "readmeUrl" : "https://raw.githubusercontent.com/VishalRana2015/Internship---6-month/master/README.md",
+      "links" : [
+        {
+          "url" : "https://github.com/VishalRana2015/Internship---6-month", 
+          "text" : "View Product Demo Here"
+        }
+      ]
     }
   ]
 }
