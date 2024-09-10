@@ -1,46 +1,44 @@
 {
-  "emailAddress" : "",
+  "emailAddress": "ranavishal2015@gmail.com",
   "connectWithMe": [
     {
       "icon": "/assets/images/svg/linkedin-svgrepo-com.svg",
-      "url": "https://www.linkedin.com",
+      "url": "https://www.linkedin.com/in/vishal-rana-072854109/",
       "title": "Linkedin"
     },
     {
       "icon": "/assets/images/svg/twitter-logo-new.svg",
-      "url": "https://www.x.com",
+      "url": "https://x.com/ranavishal2015",
       "title": "Twitter"
     },
     {
       "icon": "/assets/images/svg/instagram-svgrepo-com.svg",
-      "url": "https://www.google.com",
       "title": "Instagram"
     },
     {
       "icon": "/assets/images/svg/facebook-rounded-svgrepo-com.svg",
-      "url": "https://www.facebook.com",
       "title": "Facebook"
     }
   ],
   "followMeOn": [
     {
       "icon": "/assets/images/svg/geeksforgeeks-svgrepo-com.svg",
-      "url": "https://www.geeksforgeeks.com",
+      "url": "https://www.geeksforgeeks.org/user/vishalrana1/",
       "title": "GeeksForGeeks"
     },
     {
       "icon": "/assets/images/svg/leetcode-svgrepo-com.svg",
-      "url": "https://www.leetcode.com",
+      "url": "https://leetcode.com/u/ranavishal2015/",
       "title": "Leetcode"
     },
     {
       "icon": "/assets/images/svg/medium-svgrepo-com.svg",
-      "url": "https://www.medium.com",
+      "url": "https://medium.com/@ranavishal2015",
       "title": "Medium"
     },
     {
       "icon": "/assets/images/svg/stackoverflow-icon-svgrepo-com.svg",
-      "url": "https://www.stackoverflow.com",
+      "url": "https://stackoverflow.com/users/6696423/vishal-rana",
       "title": "Stackoverflow"
     },
     {
@@ -49,12 +47,12 @@
     },
     {
       "icon": "/assets/images/svg/hackerrank_favicon.png",
-      "url": "https://www.hackerrank.com",
+      "url": "https://www.hackerrank.com/profile/ranavishal2015",
       "title": "Hackerrank"
     },
     {
       "icon": "/assets/images/svg/hackerearth_favicon.png",
-      "url": "https://www.hackerearth.com",
+      "url": "https://www.hackerearth.com/@vishal1360",
       "title": "Hackerearth"
     }
   ]
