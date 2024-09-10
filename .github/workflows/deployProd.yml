@@ -24,9 +24,9 @@ jobs:
         run: |
           git clone https://github.com/VishalRana2015/GithubProfile.git
 
-      - name: Clone VishalRana2015.github.io repo's code from 'gh-pages' branch
+      - name: Clone VishalRana2015.github.io repo's code from 'master' branch
         run: |
-          git clone https://github.com/VishalRana2015/VishalRana2015.github.io.git --branch gh-pages
+          git clone https://github.com/VishalRana2015/VishalRana2015.github.io.git --branch master
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
