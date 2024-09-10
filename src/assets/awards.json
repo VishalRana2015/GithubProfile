@@ -6,7 +6,11 @@
         "title": "Spot Award: Database Queries Optimization",
         "date": "March 2024",
         "issuedBy": "Hashedin by Deloitte",
-        "description": "Description about award",
+        "description": "The AuditLog table, designed to track changes and activities in the application, contained approximately 1 billion records. Initially, some queries in the application against this table were notably inefficient, with response times averaging around 2 minutes, which were making all the UI pages using audit-log functionality quite slow. After a thorough analysis of the architecture, queries, and data, I was able to optimize the process. By re-writing the queries and reorganizing the data which eventually helped in obtaining optimized query plan, I successfully reduced the response time to under couple of seconds with most of them under a second.",
+        "highlights" : [
+          "Initial average response time was 2 minutes. The final response time was 1 second to couple of seconds.",
+          "The table contained a billion records."
+        ],
         "links": [
           {
             "url": "/assets/awards/2024-03 March Spot Award.pdf",
@@ -19,7 +23,7 @@
         "title": "Spot Award: BigMachines Site Letter",
         "date": "October 2023",
         "issuedBy": "Hashedin by Deloitte",
-        "description": "Description about award",
+        "description": "I successfully completed site letter changes and covered a lot of edge cases as part of the implementation. This thorough work was well appreciated and recognized by the customer for completing this critical functionality on time for the October release.",
         "links": [
           {
             "url": "/assets/awards/2023-10 October Spot Award.pdf",
@@ -32,7 +36,7 @@
         "title": "Super Squad Award",
         "date": "September 2023",
         "issuedBy": "Hashedin by Deloitte",
-        "description": "Description about award",
+        "description": "Best Team Award",
         "links": [
           {
             "url": "/assets/awards/2023-09 Sep Squad of the Quarter.pdf",
@@ -45,7 +49,7 @@
         "title": "Spot Award: Ciam Migration Tool",
         "date": "August 2023",
         "issuedBy": "Hashedin by Deloitte",
-        "description": "Description about award",
+        "description": "Played a pivotal role in designing and developing a CIAM migration tool from scratch that migrates customers to CIAM (Customer Identity and Access Management) during off-hours, in a well-planned and structured manner with a high degree of transparency.",
         "links": [
           {
             "url": "/assets/awards/2023-08 August Spot Award.pdf",
@@ -58,14 +62,9 @@
         "title": "Spot Awad: CUAS - CIAM (Auth0) integration",
         "date": "June 2022",
         "issuedBy": "Hashedin by Deloitte",
-        "description": "Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. Description about award. ",
+        "description" : "Led the integration of Auth0 into a legacy application with an AngularJS frontend and a Groovy on Grails backend. Despite the lack of native support for these technologies from Auth0, I developed a robust solution native to the code for integrating Auth0 in the application. Managed the entire process from architectural design to implementation single-handedly.",
         "highlights": [
-          "MainPoint1",
-          "mainPoint2",
-          "mainPoint3",
-          "Main point 4",
-          "Main point5",
-          "Main Point6"
+          "Designed and implemented the architecture for integrating Auth0, overcoming the challenge of the absence of native libraries for AngularJS and Groovy on Grails."
         ],
         "links": [
           {
@@ -79,7 +78,7 @@
         "title": "Super Squad Award",
         "date": "April 2022",
         "issuedBy": "Hashedin by Deloitte",
-        "description": "Description about award",
+        "description": "Best Team Award",
         "links": [
           {
             "url": "/assets/awards/2022-04 Vishal Certificate - Super Squad Award .pdf",
@@ -134,10 +133,13 @@
     ],
     "Academic Awards": [
       {
-        "data": "Successfully passed multiple regorous exams to qualify for the highly selective National Mathematical exam, earning 5% discount on admission to IIIT after high school."
+        "data": "Qualified for the National Mathematical Olympiad (NMO) after advancing through the Pre-Regional and Regional Mathematical Olympiads. This accomplishment granted a standard 5% reduction in the minimum percentage required for admission in IIITs"
       },
       {
-        "data": "Successfully passed multiple regorous exams to qualify for the highly selective National Mathematical exam, earning 5% discount on admission to IIIT after high school."
+        "data": "Awarded with SILVER Medal in Regional Level TAEK-WON-DO Championship held at JNV Chandigarh"
+      },
+      {
+        "data" : "Awarded with Academic Excellence Award in XI"
       }
     ]
   }

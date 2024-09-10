@@ -39,7 +39,7 @@
       class="list-disc font-mono ml-16 mt-8 text-blue-800 underline"
     >
       <li *ngFor="let link of links">
-        <a [href]="link.url">{{ link.text }}</a>
+        <a [href]="link.url" target="_blank">{{ link.text }}</a>
       </li>
     </ul>
   </div>
