@@ -46,6 +46,8 @@ jobs:
           cd VishalRana2015.github.io
           git rm -r .
           git clean -fxd
+          git add .
+          git commit -m "Empty Directory"
           echo "After cleaning VishalRana2015.github.io repo contents, listing the contents below. We should not get anything there."
           ls -als
           echo "---------------------------------------------------------------------------------------------------------------"
