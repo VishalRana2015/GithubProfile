@@ -8,13 +8,21 @@ import { Certification, CredlyBadge, Link } from '../achievement';
   styleUrl: './certification.component.css',
 })
 export class CertificationComponent extends Certification {
+  public sanitizedUrl: SafeResourceUrl | undefined;
   constructor(private sanitizer: DomSanitizer) {
     super();
+    this.sanitizedUrl = undefined
+  }
+
+  ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    console.log("ngOnInit called: certification")
+    this.sanitizedUrl =  this.sanitizer.bypassSecurityTrustResourceUrl('https://www.credly.com/embedded_badge/' + this.credlyBadge?.dataShareBadgeId);
   }
 
   @Input({ required: true })
   set icon(icon: string) {
-    console.log('setter icon method called');
     this._icon = icon;
   }
 
@@ -49,7 +57,6 @@ export class CertificationComponent extends Certification {
   }
 
   get icon() {
-    console.log('getter icon method called');
     return this._icon;
   }
   get title() {
@@ -73,8 +80,7 @@ export class CertificationComponent extends Certification {
     return this._links;
   }
 
-  get badgeLink(): string {
-    let safeUrl: any = this.sanitizer.bypassSecurityTrustResourceUrl('https://www.credly.com/embedded_badge/' + this.credlyBadge?.dataShareBadgeId);
-    return safeUrl;
+  get badgeLink(): SafeResourceUrl | undefined {
+    return this.sanitizedUrl
   }
 }

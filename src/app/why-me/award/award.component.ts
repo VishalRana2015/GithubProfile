@@ -9,7 +9,6 @@ import { Award, Link } from '../achievement';
 export class AwardComponent extends Award {
   @Input({ required: true })
   set icon(icon: string) {
-    console.log('setter icon method called');
     this._icon = icon;
   }
 
