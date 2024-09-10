@@ -66,7 +66,7 @@ export class ContactComponent {
       }
     };
 
-    fetch(config.mockEndpoint, {
+    fetch(config.emailjsSendAPI, {
       method: 'POST',
       headers: {
         'content-type': 'application/json'
