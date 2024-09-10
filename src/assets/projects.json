@@ -1,16 +1,40 @@
 {
   "projects" : [
     {
-      "title" : "Project Title ",
-      "tech" : "Java, Spring Boot",
+      "title" : "Mandlebrot",
+      "tech" : "Java, Java Swing",
       "description" : "Mandlebrot Renderer is a Java application that visually renders teh Mandelbrot set using JFrame. This prooject offers an interactive experience for exploring one of the most famous fractals in mathematics. The Mandelbrot set is a set of complex numbers that produces intricate and infinitely detailed patterns, showcasing the beauty and complexity of mathematical structures.",
-      "readmeUrl" : "../assets/readme/mandelbrot.md"
+      "readmeUrl" : "https://raw.githubusercontent.com/VishalRana2015/Mandelbrot/master/README.md"
     },
     {
-      "title" : "Project Title ",
-      "tech" : "Java, Spring Boot",
-      "description" : "Mandlebrot Renderer is a Java application that visually renders teh Mandelbrot set using JFrame. This prooject offers an interactive experience for exploring one of the most famous fractals in mathematics. The Mandelbrot set is a set of complex numbers that produces intricate and infinitely detailed patterns, showcasing the beauty and complexity of mathematical structures.",
+      "title" : "Convolution Image Filter Tool",
+      "tech" : "Java, Java Swing",
+      "description" : "The Convolution Image Filter Tool is a Java Swing application that applies chosen filters to any loaded image. The tool provides pre-built convolution matrices, such as Edge Detection, Emboss, and Blur, allowing users to customize their transformations. It also gives the ability to view and modify the values of the selected convolution matrix before applying. Furthermore, users can also create their own convolution matrix for unique image effects.",
+      "readmeUrl" : "https://raw.githubusercontent.com/VishalRana2015/ConvolutionImageFilter/master/README.md"
+    },
+    {
+      "title" : "AI Path Finding Algorithm Tool",
+      "tech" : "Java, Java Swing",
+      "description" : "This project is a visual tool designed to demonstrate the workings of AI pathfinding algorithms. Presenting a grid of cells, it plots a journey from a source to a destination, navigating around obstacles. Four key algorithms have been incorporated including Breadth First Search, Best First Search, A* Start, and Depth First Search. This visualization allows users to gain a better understanding of AI search strategies.",
+      "readmeUrl" : "https://raw.githubusercontent.com/VishalRana2015/AI-Algo-Software-Demonstration-Project/master/Readme.md"
+    },
+    {
+      "title" : "Secure RNG Visualization",
+      "tech" : "Java, Java Swing",
+      "description" : "This project explores the quality of Java's Math.Rand() function through a visual method. Each pixel in a JPanel instance is painted with an RGB value derived from the function, producing grayscale imagery. The absence of repeated patterns across various frame dimensions suggests the Math.rand() function produces values closely resembling those of true randomness. The project serves as an interesting, distinctive test of a commonly used function's effectiveness.",
+      "readmeUrl" : "https://raw.githubusercontent.com/VishalRana2015/secureRNG-visualization/master/Readme.md"
+    },
+    {
+      "title" : "Online Professional Portfolio",
+      "tech" : "Typscript, Angular",
+      "description" : "The Developer's Online Portfolio project is a unique platform offering a visual representation of a developer's individual skills, experience, and accomplishments. The primary goal of this project is to help software engineers and programmers showcase their work effectively to potential clients or employers. Inclusive of a contact form, it ensures seamless communication between the developer and potential clients or employers, fostering professional networking possibilities. Ultimately, this online portfolio project transcends the traditional way of presenting a developer's credibility through a simple CV or resume, paving the way for more comprehensive and visually appealing experience.",
       "readmeUrl" : "https://raw.githubusercontent.com/VishalRana2015/GithubProfile/master/README.md"
+    },
+    {
+      "title" : "Tying tutor",
+      "tech" : "C",
+      "description" : "The Typing Tutor is an interactive command-line tool designed to help users improve their typing abilities, speed, and precision. It offers various lessons on keyboard usage, a built-in typing test feature, and a progress tracker. Users can register, choose lessons, practice, take tests and view their consolidated test reports. The tool includes options for expanding its functionality with editable text files for practice and testing purposes.",
+      "readmeUrl" : "https://raw.githubusercontent.com/VishalRana2015/Typing-Tutor/master/README.md"
     }
   ]
 }
