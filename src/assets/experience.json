@@ -1,40 +1,103 @@
 {
-  "experience": [
+  "designations" : [
     {
-      "projectWorkPeriod": "A string containing date, range ... e.g Jul- Dec 2020",
-      "title": "Project Title",
-      "data": [
-        "A String containing data that you want to show as key your responsibilities while working on the project"
-      ],
-      "link": {
-        "href": "link to project",
-        "text": "Hyperlink text"
-      },
-      "role": "Your role on the project"
+      "title" : "Hashedin by Deloitte - Software Engineer II",
+      "timeline" : "August 2022 - Present",
+      "experiences" : [
+        {
+          "title" : "Data Center Exit",
+          "role" : "Backend Developer",
+          "data" : [
+            "Migrated application database from Oracle to PostgreSQL, rewrote several Oracle queries to ensure compatibility with postgres.",
+            "", 
+            "Took a key role in investigating and resolving performance issues in an application that struggled under normal load after migrating to AWS. Conducted an in-depth analysis of AWS Load Balancers and Tomcat internals to identify the root cause and implement a successful fix",
+            "Tech Stack: AWS Application Load Balancers, Tomcat, Jmeter",
+            "", 
+            "Led the migration of an outdated legacy Java application to AWS. Resolved critical issues, including the absence of a build system and sensitive information stored in plain text. Implemented Gradle for easy builds and encrypted sensitive data in configuration files as per the organization standards, ensuring security and improved maintainability",
+            "Worked with DevOps Team on setting up CI/CD pipeline for it.",
+            "Tech Stack: AWS, Gradle, Java, Cryptography"
+          ]
+        },
+        {
+          "title" : "Legacy Application Rewrite in Spring Boot", 
+          "role" : "Backend Developer and CUAS Application Expert",
+          "data" : [
+            "An application written in Groovy on Grails, faced security risks due to outdated libraries. I played a key role in planning its rewrite migration, architecture, and initial implementation and testing to ensure a secure and modernized solution",
+            "Tech Stack: Spring Boot, Spring Security, Gradle, Postgresql"
+          ]
+        },
+        {
+          "title" : "Audit Log Queries Optimization",
+          "role" : "Backend Developer",
+          "data" : [
+            "Analyzed existing queries SQL plan for Audit Log table and optimized them. After optimization the average response time reduced from 2 minutes to under a second.",
+            "Tech Stack: Oracle, SQL"
+          ]
+        },
+        {
+          "title" : "Ciam Migration Tool",
+          "role" : "Backend Developer",
+          "data" : [
+            "We created a tool to migrate users to a Customer Identity and Access Management (CIAM) system built on Auth0. The tool sets up user profiles on the platform with the necessary roles, enabling them to log in to our application seamlessly through the SSO (Single Sign-On) process",
+            "Developed a small UI tool to help the services team quickly identify the root cause of issues preventing users from accessing the application through the CIAM login flow",
+            "Tech Stack: Spring Batch Framework, Spring Quartz Framework, Groovy on Grails"
+          ]
+        }
+      ]
+    },
+
+    {
+      "title" : "Hashedin by Deloitte - Software Engineer I",
+      "timeline" : "July 2021 - August 2022",
+      "experiences" : [
+        {
+          "title" : "Auth0 Integration with CUAS",
+          "role" : "Full stack Developer",
+          "data" : [
+            "Led the integration of Auth0 into a legacy application with an AngularJS frontend and a Groovy on Grails backend. Despite the lack of native support for these technologies from Auth0, I developed a robust solution native to the code for integrating Auth0 into the application. Managed the entire process from architectural design to implementation single-handedly",
+            "Created a new login flow which enabled customers to authenticate themselves through their own IDP servers through Auth0 while signing into our application. The solution enhanced the user experience and fulfilled the SSO requirements without requiring direct libraries from Auth0 for AngularJS or Grails.",
+            "Tech Stack: AngularJS, Auth0 Service, Groovy on Grails, Maven",
+            "", 
+            "Worked on creating new Features and Rest APIs in a Java Servlet with JSP application"
+          ]
+        }
+      ]
     },
     {
-      "projectWorkPeriod": "May 2018 - June 2018",
-      "title": "Arizona State University",
-      "data": [
-        "Optimized image processing algorithm of pill detection by creating customized MASKRCNN algorithm, increasing accuracy by 15%; trained classification algorithm with the help of triplet loss to learn the image embedding of pill, reducing the hassle of collecting data of new pills.",
-        "Devised a pipeline of the project to incorporate it into the product of the company. Implemented Restful APIs in Django that enabled our quality Analyst team to increase reporting speed by 46%.",
-        "Built a web app to onboard data from the company’s product using Flask, Postgres, and AWS S3, enabling interactive charts in real-time.",
-        "Mentored 2 interns to optimize the pill detection algorithm and to include the multiprocessing pipeline, increasing overall speed by 75%."
-      ],
-      "link": {
-        "href": "https://www.asu.edu/",
-        "text": "Link to ASU Website"
-      },
-      "role": "Programmer Analyst"
-    },
-    {
-      "projectWorkPeriod": "Jan 2018 - May 2018",
-      "title": "Space Application Centre, ISRO",
-      "data": [
-        "Implemented noise reduction algorithm on the satellite image and prepared architecture for detecting objects in high‑resolution satellite images, achieving 80% accuracy.",
-        "Increased accessibility of satellite image data by redesigning database and application for showcasing graphical data."
-      ],
-      "role": "Research Intern"
+      "title" : "Hashedin by Deloitte - Software Engineer Intern",
+      "timeline" : "Feb 2021 - June 2021",
+      "experiences" : [
+        {
+          "title" : "Highlighter - Backend Developer",
+          "role" : "Backend Developer",
+          "data" : [
+                "Developed the backend in Spring Boot from scratch for the Highlighter Project, a chrome extension application that lets users highlight text on websites and save it to a centralized location. Users can later revisit their highlights with advanced search features to quickly find specific text or return to the original website from the centralized platform",
+                "We later uploaded the application to Chrome Store",
+                "Designed and implemented an optimal solution for highlighting text on websites, addressing a dynamic tree problem in the website's DOM structure",
+                "Tech Stack : Spring Boot, Spring Security, javascript, Postgresql"
+          ],
+          "links" : [
+            {
+              "href" : "https://drive.google.com/file/d/1n6wnNwRzyNHVL8Kj2pio5TDE9tO5v4ve/view?usp=sharing",
+              "text" : "HBS Highlighter Demo"
+            }
+          ]
+        },
+        {
+          "title" : "Mutual Funds Portfolio Analyzer",
+          "role" : "Backend Developer",
+          "data" : [
+            "Designed and implemented backend for the Mutual Fund portfolio analyzer.",
+            "Tech Stack: Spring Boot, Postgresql, MuleSoft"
+          ],
+          "links" : [
+            {
+              "href" : "https://drive.google.com/file/d/1EltLndKHq3FQsOHYxsJF90x6niuPPDIx/view?usp=sharing",
+              "text" : "MFPA Demo"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

@@ -1,13 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 import data from '../../assets/experience.json';
 
+interface Designation{ 
+  title: String; 
+  timeline: String; 
+  experiences: Experience[]
+}
+
+interface Link {
+  href : String;
+  text: String;
+}
+
+interface Experience {
+  title: String; 
+  role: String; 
+  timeline ?: String; 
+  data : String[];
+  links ?: Link[]
+}
+
+
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
-  experiences: any[] = [];
+  designations: Designation[] = [];
 
   constructor(){
     
@@ -18,7 +38,8 @@ export class PortfolioComponent implements OnInit {
   }
 
   private fetchExperiences(): void {
-    this.experiences = data.experience;
+    this.designations = data.designations;
+
     // this.service.getExperiences().subscribe(
     //   (data: any) => {
     //     console.log("Data from JSON file:", data);
