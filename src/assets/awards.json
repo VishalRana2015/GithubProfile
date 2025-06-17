@@ -3,6 +3,40 @@
     "Professional Awards": [
       {
         "icon": "/assets/images/rewardExcellence.png",
+        "title": "Spot Award: Legacy App CI/CD Setup",
+        "date": "Feb 2025",
+        "issuedBy": "Hashedin by Deloitte",
+        "description": "A very old legacy JAX-RPC Java application previously had no automated build or deployment pipeline while running on on-premises servers. However, following its migration to the cloud, new security compliance requirements mandated the implementation of a deployment pipeline. I was entrusted with the responsibility of setting up this pipeline.",
+        "highlights" : [
+          "Integrated Gradle Build toot",
+          "Wrote GitHub Workflows and utilized the organization's Cobalt deployment model—built on top of AWS CodeBuild, CodePipeline, Step Functions, and Lambda—to set up the CI/CD pipeline for the application"
+        ],
+        "links": [
+          {
+            "url": "/assets/awards/2025-07 Feb Spot Award_Redacted.pdf",
+            "text": "Award Certificate"
+          }
+        ]
+      },
+      {
+        "icon": "/assets/images/rewardExcellence.png",
+        "title": "Spot Award: Cloud-CUAS application Performance Optimization",
+        "date": "August 2024",
+        "issuedBy": "Hashedin by Deloitte",
+        "description": "Played a key role in optimising the performance of the CUAS application after its recent migration from on-premises infrastructure to the cloud. The apploication was not handling heavy load as effectively as it did on on-prem servers.",        
+        "highlights" : [
+          "Analysed the application’s architecture and the internals of AWS Application Load Balancer (ALB) and the Tomcat server to understand end-to-end HTTP request handling and identify potential bottlenecks.",
+          "Provided strategic recommendations that not only enhanced application performance but also led to significant cost reductions"
+        ],
+        "links": [
+          {
+            "url": "/assets/awards/2024-09 August Spot Award_Redacted.pdf",
+            "text": "Award Certificate"
+          }
+        ]
+      },
+      {
+        "icon": "/assets/images/rewardExcellence.png",
         "title": "Spot Award: Database Queries Optimization",
         "date": "March 2024",
         "issuedBy": "Hashedin by Deloitte",
@@ -49,7 +83,7 @@
         "title": "Spot Award: Ciam Migration Tool",
         "date": "August 2023",
         "issuedBy": "Hashedin by Deloitte",
-        "description": "Played a pivotal role in designing and developing a CIAM migration tool from scratch that migrates customers to CIAM (Customer Identity and Access Management) during off-hours, in a well-planned and structured manner with a high degree of transparency.",
+        "description": "Played a pivotal role in designing and developing a CIAM migration tool from scratch written as a set of Spring Batch Jobs that migrates customers to CIAM (Customer Identity and Access Management) during off-hours, in a well-planned and structured manner with a high degree of transparency.",
         "links": [
           {
             "url": "/assets/awards/2023-08 August Spot Award.pdf",
@@ -64,7 +98,9 @@
         "issuedBy": "Hashedin by Deloitte",
         "description" : "Led the integration of Auth0 into a legacy application with an AngularJS frontend and a Groovy on Grails backend. Despite the lack of native support for these technologies from Auth0, I developed a robust solution native to the code for integrating Auth0 in the application. Managed the entire process from architectural design to implementation single-handedly.",
         "highlights": [
-          "Designed and implemented the architecture for integrating Auth0, overcoming the challenge of the absence of native libraries for AngularJS and Groovy on Grails."
+          "Designed and implemented the architecture for integrating Auth0, overcoming the challenge of the absence of native libraries for AngularJS and Groovy on Grails.",
+          "Designed and implemented a custom authentication flow in a Grails application, enabling users to log in using an ID token obtained from Auth0 after successful authentication with Auth0.",
+          "As the outcome of it, CIAM SSO flow was enabled."
         ],
         "links": [
           {
