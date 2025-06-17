@@ -19,6 +19,24 @@
         ]
       },
       {
+        "icon": "/assets/images/topImpactor.png",
+        "title": "Top Impactor",
+        "date": "Nov 2024",
+        "issuedBy": "Hashedin by Deloitte",
+        "description": "",
+        "highlights" : [       ],
+        "links": [
+          {
+            "url": "/assets/awards/TopImpactorCertificate.png",
+            "text": "Top Impactor Certificate"
+          }, 
+          {
+            "url" : "/assets/awards/TopImpactorTrophy.png",
+            "text" : "Top Impactor Trophy"
+          }
+        ]
+      },
+      {
         "icon": "/assets/images/rewardExcellence.png",
         "title": "Spot Award: Cloud-CUAS application Performance Optimization",
         "date": "August 2024",

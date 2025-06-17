@@ -2,8 +2,14 @@
   "designations" : [
     {
       "title" : "Hashedin by Deloitte - Software Engineer II",
-      "timeline" : "August 2022 - Present",
+      "timeline" : "August 2022 - Feb 2025",
       "experiences" : [
+        {
+          "title" : "Grails to Spring Boot: A complete application re-write",
+          "role" : "Backend Developer",
+          "data" : [
+          ]
+        },
         {
           "title" : "Data Center Exit",
           "role" : "Backend Developer",
